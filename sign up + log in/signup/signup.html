@@ -21,31 +21,82 @@
     <form id="signup">
         <div class="signupContent">
             <div>
-                <input type="text" placeholder="Tên Đăng Nhập" id="username">
+                <input type="text" placeholder="Tên Đăng Nhập" name="username" id="username">
                 <span class="material-symbols-outlined">person</span>
             </div>
             <div>
-                <input type="password" placeholder="Mật Khẩu" id="password">
+                <input type="password" placeholder="Mật Khẩu" name="password" id="password">
                 <span class="material-symbols-outlined">keyboard_hide</span>
                 <span id="passMess"></span>
             </div>
             <div>
-                <input type="password" placeholder="Nhập Lại Mật Khẩu" id="confirmPassword">
+                <input type="password" placeholder="Nhập Lại Mật Khẩu" name="confirmPassword" id="confirmPassword">
                 <span class="material-symbols-outlined">keyboard_hide</span>
             </div>
         </div>
         <div id="sendBtn">
-            <button type="submit">
+            <button id="button">
                 tạo tài khoản
                 <!-- <a href="/sign up + log in/login/index.html">Tạo Tài Khoản</a> -->
             </button>
         </div>
-        <div class="titleContent">
+        <!-- <div class="titleContent">
             <span>Bạn đã có tài khoản?</span>
             <a href="/sign up + log in/login/login.html">Đăng Nhập!</a>
-        </div>
+        </div> -->
     </form>
-    <script src="/sign up + log in/signup/signup.js"></script>
+    <!-- <script src="/sign up + log in/signup/signup.js"></script> -->
+    <script>
+        let button = document.getElementById("button")
+        button.addEventListener("click", (e) =>{
+            e.preventDefault()
+            let pass = document.getElementById("password").value
+            let checkPass = document.getElementById("confirmPassword").value
+            console.log(pass);
+            console.log(checkPass);
+            if (pass !== checkPass) {
+                document.getElementById("passMess").innerHTML = "Mật Khẩu Không Chính Xác"
+            }
+            if (pass.length < 8) {
+                document.getElementById("passMess").innerHTML = "Mật Khẩu Phải Từ 8 - 16 Ký Tự"
+            }
+            if (pass.length > 16) {
+                document.getElementById("passMess   ").innerHTML = "Mật Khẩu Phải Từ 8 - 16 Ký Tự"
+            }
+            
+        })
+        // function verifyPassword() {
+            
+        //     let pass = document.getElementById("password").value
+        //     let checkPass = document.getElementById("confirmPassword").value
+        //     if (pass !== checkPass) {
+        //         document.getElementById("messPass").innerHTML = "Mật Khẩu Không Chính Xác"
+        //     }
+        //     if (pass.length < 8) {
+        //         document.getElementById("messPass").innerHTML = "Mật Khẩu Phải Từ 8 - 16 Ký Tự"
+        //     }
+        //     if (pass.length > 16) {
+        //         document.getElementById("messPass").innerHTML = "Mật Khẩu Phải Từ 8 - 16 Ký Tự"
+        //     }
+        // }
+        // let signup = document.getElementById("signup")
+        // if (!localStorage.users) {
+        //     localStorage.users = JSON.stringify([]);
+        // }
+
+        // signup.addEventListener("submit", (e) => {
+        //     e.preventDefault()
+        //     console.log(localStorage.users);
+        //     let localUsers = JSON.parse(localStorage.users)
+        //     localUsers.push({ username: e.target.username.value, password: e.target.password.value, checkPass: e.target.confirmPassword.value })
+        //     localStorage.users = JSON.stringify(localUsers)
+
+
+        //     console.log (1)
+        //     console.log(e.target.password.value)
+        // })
+        
+    </script>
 
 </body>
 

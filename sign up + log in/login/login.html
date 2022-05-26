@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoDic</title>
-    <link rel="stylesheet" href="/sign up + log in/style.css" <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/sign up + log in/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet"
@@ -38,7 +38,34 @@
             <a href="/sign up + log in/signup/signup.html">Tạo Tài Khoản!</a>
         </div>
     </form>
-    <script src="/sign up + log in/login/login.js"></script>
+    <!-- <script src="/sign up + log in/login/login.js"></script> -->
+    <script>
+        let login = document.getElementById("login")
+        if (!localStorage.user) {
+            localStorage.users = JSON.stringify([]);
+        }
+
+        login.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let localUser = JSON.parse(localStorage.user)
+            localUser.push({ username: e.target.username.value, password: e.target.password.value })
+            localStorage.user = JSON.stringify(localUser)
+
+            let isExist = false
+            for (let user of localUser) {
+                if (user.username === e.target.username.value && user.password === e.target.value.password) {
+                    isExist = true
+                }
+            }
+            if (isExist) {
+                console.log("đăng nhập thành công")
+            } else {
+                console.log("sai tên đăng nhâp hoặc mật khẩu")
+
+            }
+        })
+    </script>
 </body>
 
 
