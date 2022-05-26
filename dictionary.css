@@ -11,13 +11,15 @@
 }
 body{
   font-family: Montserrat Reg;
+  min-height: 100vh;
+  background-size: cover;
+  background-image: url(Asset/Background/ambrose-chua-zxbNbuncq1g-unsplash.jpg);
+}
+.dictionary{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  /* background: #4D59FB; */
-  background-size: cover;
-  background-image: url(Asset/Background/ambrose-chua-zxbNbuncq1g-unsplash.jpg);
+  height: 100vh;
 }
 ::selection{
   color: #fff;

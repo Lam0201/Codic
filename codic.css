@@ -23,6 +23,7 @@ body{
     background-color: whitesmoke;
     position: sticky;
     padding: 10px;
+    position: sticky;
 }
 a{
     text-decoration: none;
@@ -68,38 +69,17 @@ a{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 30px
+    grid-gap: 30px;
+    padding: 0 50px;
 }
 .slogan{
     color: rgb(255, 254, 254);
     font-weight: 300;
-    padding: 130px 0 30px 50px;
+    padding: 130px 0 30px 0px;
 }
 .slogan > div > div > h1{
     font-size: 65px;
 }
-/* .typing{
-    overflow: hidden; Ensures the content is not revealed until the animation
-    border-right: .15em solid orange; The typwriter cursor
-    white-space: nowrap; Keeps the content on a single line
-    margin: 0 auto; Gives that scrolling effect as the typing happens
-    letter-spacing: .15em; Adjust as needed
-    animation: 
-        typing 10s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-
-The typing effect
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-The typewriter cursor effect
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-} */
 .slogan > p{
     margin-top: 30px;
     font-size: 21px;
@@ -108,7 +88,7 @@ The typewriter cursor effect
 .slogan-image{
     display: grid;
     height: 430px;
-    margin: 80px 50px 150px 0;
+    margin: 80px 0px 150px 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
@@ -146,6 +126,26 @@ The typewriter cursor effect
     background-color: #DB6400;
     border-radius: 8px;
     transform: scale(1.15);
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+/* BUTTON TO SCROLL TOP */
+.top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 20px 25px;
+    border-radius: 50%;
+}
+.top-btn > i:hover{
+    transform: scale(1.15);
+    transform: translateY(-5px);
     transition: ease-out;
     transition-duration: 0.3s;
 }
@@ -208,16 +208,13 @@ The typewriter cursor effect
     text-align: center;
     background-image: url(Asset/Background/bgr3.jpg);
     background-size: cover;
+    /* height: 100vh; */
 }
-/* .remember-element > h1{
-    color: white;
-} */
 .element-number{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 70%;
     margin: 30px auto;
-    /* color: white; */
 }
 .element-number > div > h2{
     font-size: 45px;
@@ -227,9 +224,12 @@ The typewriter cursor effect
 }
 .element-content{
     display: grid;
-    grid-template-columns: 0.75fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     text-align: left;
-    padding: 20px;
+    grid-gap: 0 40px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
 }
 .element-content-img{
     display: grid;
@@ -259,7 +259,8 @@ The typewriter cursor effect
 .element-content-list{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 0.1fr 0.1fr 0.8fr;
+    grid-template-columns: 0.1fr 0.1fr 0.7fr;
+    overflow: hidden;
 }
 .element-content-list > div{
     border-left: 8px solid rgb(197, 158, 253);
@@ -422,6 +423,7 @@ The typewriter cursor effect
 }
 .user-infor > div > h2{
     font-size: 24px;
+    text-align: left;
 }
 .user-infor > div > p{
     font-size: 15px;
@@ -434,29 +436,8 @@ The typewriter cursor effect
     font-size: 18px;
 }
 
-/* PARTNER -DIV 6*/
-.partner{
-    background-image: url(Asset/Background/bgr6.jpg);
-    background-size: cover;
-}
-.partner-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-    grid-row-gap: 100px;
-    padding: 50px;
-}
-.partner > div {
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 200%;
-}
-.partner-list > div > img{
-    width: 100px;
-}
 
-/* START LEARNING - BACKGROUND 7 */
+/* START LEARNING - BACKGROUND 6 */
 .start-learning{
     background-image: url(Asset/Background/bgr7.jpg);
     background-size: cover;
@@ -481,12 +462,18 @@ The typewriter cursor effect
     background-image: url(Asset/Background/learn\ word.jpg);
     background-size: cover;
     border-radius: 18px 18px 0 0;
+    height: fit-content;
 }
 .list > ul{
     list-style-type: none;
 }
 .scale, .learning-section-name > a{
     color: black;
+}
+.scale{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.758);
+    border-radius: 8px;
 }
 .scale :hover{
     transform: translate(100px);
@@ -500,6 +487,28 @@ The typewriter cursor effect
     line-height: 200%;
     background-color: rgb(68, 170, 204);
     border-radius: 0 0 18px 18px;
+}
+
+/* PARTNER -DIV 7*/
+.partner{
+    background-image: url(Asset/Background/bgr6.jpg);
+    background-size: cover;
+}
+.partner-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    grid-row-gap: 100px;
+    padding: 50px;
+}
+.partner > div {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 200%;
+}
+.partner-list > div > img{
+    width: 100px;
 }
 
 /* FOOTER - DIV 8 */

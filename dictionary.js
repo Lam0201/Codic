@@ -33,8 +33,12 @@ function data(result, word){
         document.querySelector(".word span").innerText = phontetics;
         document.querySelector(".meaning span").innerText = definitions.definition;
         document.querySelector(".example span").innerText = definitions.example;
-        audio = new Audio("https:" + result[0].phonetics[0].audio);
-
+        let phonetics = result[0].phonetics
+        for (let e of phonetics) {
+            if (e.audio != "") {
+                audio = new Audio(e.audio);
+            }
+        }
         if(definitions.synonyms[0] == undefined){
             synonyms.parentElement.style.display = "none";
         }else{
@@ -58,8 +62,7 @@ function fetchApi(word){
     wrapper.classList.remove("active");
     infoText.style.color = "#000";
     infoText.innerHTML = `Searching the meaning of <span>"${word}"</span>`;
-    //let url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl={en}&tl={vi}&dt=t&q=${word}`;
-    let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}  `;
     fetch(url).then(response => response.json()).then(result => data(result, word)).catch(() =>{
         infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
     });
