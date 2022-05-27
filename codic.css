@@ -149,6 +149,9 @@ a{
     transition: ease-out;
     transition-duration: 0.3s;
 }
+.top.btn > i{
+    color: black;
+}
 
 /* NEW WORD - DIV 2 */
 .new-word{
