@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 @font-face{
-    src: url(/Asset/Montserrat/Montserrat-Regular.ttf);
+    src: url(Asset/Montserrat/Montserrat-Regular.ttf);
     font-family: Montserrat Reg;
 }
 body{
@@ -62,13 +62,13 @@ a{
 
 /* INTRODUCTION DIV 1 */
 .intro{
-    background-image: url(/Asset/Background/slogan\ bgr.jpg);
+    background-image: url(Asset/Background/slogan\ bgr.jpg);
     background-size: cover;
     display: grid;
     grid-template-columns: 60% 40%;
-    /* grid-template-rows: 1fr; */
     grid-gap: 30px;
     padding: 0 50px;
+    /* height: 100vh; */
 }
 .slogan{
     color: rgb(255, 254, 254);
@@ -85,18 +85,13 @@ a{
 }
 .slogan-image{
     display: grid;
-    height: 350px;
+    height: 420px;
     margin: 80px 0 150px 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-}
-.slogan-image > div > img{
-    height: 100%;
-    border-radius: 12px;
-}
-.slogan > div{
-    margin: auto;
+    text-align: center;
+    width: 100%;
 }
 .slg-img1{
     grid-row: 1/4;
@@ -110,6 +105,15 @@ a{
 .slg-img4{
     grid-row: 3/5;
 }
+.slogan-image > div > img{
+    height: 100%;
+    border-radius: 12px;
+    width: 180px;
+}
+.slogan > div{
+    margin: auto;
+}
+
 .btn-white{
     width: fit-content;
     padding: 10px;
@@ -148,16 +152,13 @@ a{
     transition: ease-out;
     transition-duration: 0.3s;
 }
-.top.btn > i{
-    
-}
 
 /* NEW WORD - DIV 2 */
 .new-word{
     padding-top: 50px;
     text-align: center;
     height: fit-content;
-    background-image: url(/Asset/Background/bgr2.jpg);
+    background-image: url(Asset/Background/bgr2.jpg);
     background-size: cover;
 }
 .heading1{
@@ -208,7 +209,7 @@ a{
 /* REMEMBER ELEMENT - DIV 3 */
 .remember-element{
     text-align: center;
-    background-image: url(/Asset/Background/bgr3.jpg);
+    background-image: url(Asset/Background/bgr3.jpg);
     background-size: cover;
     /* height: 100vh; */
 }
@@ -292,7 +293,7 @@ a{
 /* EXERCISE - DIV 4 */
 .exercise{
     text-align: center;
-    background-image: url(/Asset/Background/bgr4.jpg);
+    background-image: url(Asset/Background/bgr4.jpg);
     background-size: cover;
 }
 .exercise-number{
@@ -368,7 +369,7 @@ a{
 /* USER FEEEDBACK - DIV 5 */
 .user-feedback{
     text-align: center;
-    background-image: url(/Asset/Background/bgr5.jpg);
+    background-image: url(Asset/Background/bgr5.jpg);
     background-size: cover;
 }
 .user-number{
@@ -441,7 +442,7 @@ a{
 
 /* START LEARNING - BACKGROUND 6 */
 .start-learning{
-    background-image: url(/Asset/Background/bgr7.jpg);
+    background-image: url(Asset/Background/bgr7.jpg);
     background-size: cover;
 }
 .learning-process{
@@ -461,7 +462,7 @@ a{
     justify-content: space-evenly;
     line-height: 400%;
     font-size: 35px;
-    background-image: url(/Asset/Background/learn\ word.jpg);
+    background-image: url(Asset/Background/learn\ word.jpg);
     background-size: cover;
     border-radius: 18px 18px 0 0;
     height: fit-content;
@@ -493,7 +494,7 @@ a{
 
 /* PARTNER -DIV 7*/
 .partner{
-    background-image: url(/Asset/Background/bgr6.jpg);
+    background-image: url(Asset/Background/bgr6.jpg);
     background-size: cover;
 }
 .partner-list{
@@ -515,7 +516,7 @@ a{
 
 /* FOOTER - DIV 8 */
 .footer{
-    background-image: url(/Asset/Background/footer\ bgr.jpg);
+    background-image: url(Asset/Background/footer\ bgr.jpg);
     background-size: cover;
     display: grid;
     grid-template-columns: 1.5fr 1fr;

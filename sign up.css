@@ -2,7 +2,7 @@ body{
     height: 100vh;
 }
 .content{
-    background-image: url(/Asset/Background/sign\ up\ bgr.jpg);
+    background-image: url(Asset/Background/sign\ up\ bgr.jpg);
     background-size: cover;
     /* height: 100%; */
 }
@@ -34,7 +34,7 @@ section{
     width: 60%;
 }
 .content > img{
-    width: 250px;
+    width: 280px;
     border-radius: 18px;
     z-index: 2;
 }

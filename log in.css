@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(/Asset/Background/log\ in\ bgr.jpg);
+    background-image: url(Asset/Background/log\ in\ bgr.jpg);
     background-size: cover;
     height: 100vh;
 }

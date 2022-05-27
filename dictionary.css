@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 @font-face{
-  src: url(/Asset/Montserrat/Montserrat-Regular.ttf);
+  src: url(Asset/Montserrat/Montserrat-Regular.ttf);
   font-family: Montserrat Reg;
 }
 body{
   font-family: Montserrat Reg;
   min-height: 100vh;
   background-size: cover;
-  background-image: url(/Asset/Background/dictionary\ bgr.jpg);
+  background-image: url(Asset/Background/dictionary\ bgr.jpg);
 }
 .dictionary{
   display: flex;
