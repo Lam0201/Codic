@@ -1,9 +1,9 @@
 // Set random bgr change after 5min
 window.onload = function () {
-    var backgroundImg=["Asset/Background/ambrose-chua-zxbNbuncq1g-unsplash.jpg",
-                        "Asset/Background/Back ground image 1.png",
-                        "Asset/Background/bgr2.jpg",
-                        "Asset/Background/bgr33.jpg"
+    var backgroundImg=["/Asset/Background/ambrose-chua-zxbNbuncq1g-unsplash.jpg",
+                        "/Asset/Background/Back ground image 1.png",
+                        "/Asset/Background/bgr2.jpg",
+                        "/Asset/Background/bgr33.jpg"
                         ]
 
     setInterval(changeImage, 50000);

@@ -1,19 +1,17 @@
-/* Import Google Font - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 @font-face{
-  src: url(Asset/Montserrat/Montserrat-Regular.ttf);
+  src: url(/Asset/Montserrat/Montserrat-Regular.ttf);
   font-family: Montserrat Reg;
 }
 body{
   font-family: Montserrat Reg;
   min-height: 100vh;
   background-size: cover;
-  background-image: url(Asset/Background/ambrose-chua-zxbNbuncq1g-unsplash.jpg);
+  background-image: url(/Asset/Background/dictionary\ bgr.jpg);
 }
 .dictionary{
   display: flex;

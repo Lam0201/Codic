@@ -5,58 +5,74 @@
     font-family: Montserrat Reg;
 }
 
+body{
+    background-image: url(/Asset/Background/log\ in\ bgr.jpg);
+    background-size: cover;
+    height: 100vh;
+}
 section{
     position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-}
-
-section .img-bg{
-    position: relative;
-    width: 50%;
-    height: 100%;
-}
-section .img-bg img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-section .content{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
     height: 100%;
 }
-
-section .content .form{
-    width: 50%;
+.login-img-bottom{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    left: 50px;
+    width: 280px;
+    border-radius: 18px;
+}
+.login-img-top{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    right: 50px;
+    width: 280px;
+    border-radius: 18px;
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 18px;
+}
 
-section .content .form h2{
+.form{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form > h2{
     color: #607d8b;
     font-weight: 500;
     font-size: 1.5em;
     text-transform: uppercase;
     margin-bottom: 20px;
     border-bottom: 4px solid orangered;
-    display: inline-block;
     letter-spacing: 1px;
-    
 }
 
-section .content .form .input-form{
+.input-form{
     margin-bottom: 20px;
 }
 
 
-section .content .form .input-form span{
+.input-form span{
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
@@ -65,7 +81,7 @@ section .content .form .input-form span{
     
 }
 
-section .content .form .input-form input{
+.input-form input{
     width: 100%;
     padding: 10px 20px;
     outline: none;
@@ -77,7 +93,7 @@ section .content .form .input-form input{
     border-radius: 30px;
     
 }
-section .content .form .input-form input[type="submit"]{
+.input-form input[type="submit"]{
     background: rgb(255, 121, 44);
     color: black;
     outline: none;
@@ -91,38 +107,38 @@ section .content .form .input-form input[type="submit"]{
               0 16px 16px rgba(0,0,0,0.12);
 }
 
-section .content .form .input-form input[type="submit"]:hover{
+.input-form input[type="submit"]:hover{
     background: orangered;
     color: white;
 }
-section .content .form .remember-info{
+.remember-info{
     margin-bottom: 10px;
     color: #607d8b;
     font-size: 14px;
 }
 
-section .content .form .input-form p{
+.input-form > p{
     color: #607d8b;
 }
 
-section .content .form .input-form p a{
+.input-form > p > a{
     color: orangered;
 }
 
-section .content .form h3{
+.form > h3{
     color: #607d8b;
     text-align: center;
-    margin: 80px 0 10px;
+    margin: 50px 0 10px;
     font-weight: 500;
 }
 
-section .content .form .channel-icon{
+.channel-icon{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section .content .form .channel-icon li{
+.channel-icon > li{
     list-style: none;
     cursor: pointer;
     width: 50px;
@@ -131,13 +147,13 @@ section .content .form .channel-icon li{
     justify-content: center;
     align-items: center;
 }
-section .content .form .channel-icon li:nth-child(1){
+.channel-icon > li:nth-child(1){
     color: #3b5999;
 }
-section .content .form .channel-icon li:nth-child(2){
+.channel-icon > li:nth-child(2){
     color: #dd4b39;
 }
-section .content .form .channel-icon li i{
+.channel-icon > li > i{
     font-size: 30px;
 }
 
