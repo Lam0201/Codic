@@ -1,5 +1,6 @@
 // Set random bgr change after 5min
 window.onload = function () {
+<<<<<<< HEAD:Asset/dictionary.js
     var backgroundImg = ["Asset/Background/ambrose-chua-zxbNbuncq1g-unsplash.jpg",
         "Asset/Background/Back ground image 1.png",
         "Asset/Background/bgr2.jpg",
@@ -10,6 +11,58 @@ window.onload = function () {
     function changeImage() {
         var i = Math.floor((Math.random() * 4));
         document.body.style.backgroundImage = "url('" + backgroundImg[i] + "')";
+=======
+    var backgroundImg=["Asset/Background/Dic bgr/dic bgr 1.jpg",
+    "Asset/Background/Dic bgr/dic bgr 2.jpg",
+    "Asset/Background/Dic bgr/dic bgr 3.jpg",
+    "Asset/Background/Dic bgr/dic bgr 4.jpg",
+    "Asset/Background/Dic bgr/dic bgr 5.jpg",
+    "Asset/Background/Dic bgr/dic bgr 6.jpg",
+    "Asset/Background/Dic bgr/dic bgr 7.jpg",
+    "Asset/Background/Dic bgr/dic bgr 8.jpg",
+    "Asset/Background/Dic bgr/dic bgr 9.jpg",
+    "Asset/Background/Dic bgr/dic bgr 10.jpg",
+    "Asset/Background/Dic bgr/dic bgr 11.jpg",
+    "Asset/Background/Dic bgr/dic bgr 12.jpg",
+    "Asset/Background/Dic bgr/dic bgr 13.jpg",
+    "Asset/Background/Dic bgr/dic bgr 14.jpg",
+    "Asset/Background/Dic bgr/dic bgr 15.jpg",
+    "Asset/Background/Dic bgr/dic bgr 16.jpg",
+    "Asset/Background/Dic bgr/dic bgr 17.jpg",
+    "Asset/Background/Dic bgr/dic bgr 18.jpg",
+    "Asset/Background/Dic bgr/dic bgr 19.jpg",
+    "Asset/Background/Dic bgr/dic bgr 20.jpg",
+    "Asset/Background/Dic bgr/dic bgr 21.jpg",
+    "Asset/Background/Dic bgr/dic bgr 22.jpg",
+    "Asset/Background/Dic bgr/dic bgr 23.jpg",
+    "Asset/Background/Dic bgr/dic bgr 24.jpg",
+    "Asset/Background/Dic bgr/dic bgr 25.jpg",
+    "Asset/Background/Dic bgr/dic bgr 26.jpg",
+    "Asset/Background/Dic bgr/dic bgr 27.jpg",
+    "Asset/Background/Dic bgr/dic bgr 28.jpg",
+    "Asset/Background/Dic bgr/dic bgr 29.jpg",
+    "Asset/Background/Dic bgr/dic bgr 30.jpg",
+    "Asset/Background/Dic bgr/dic bgr 31.jpg",
+    "Asset/Background/Dic bgr/dic bgr 32.jpg",
+    "Asset/Background/Dic bgr/dic bgr 33.jpg",
+    "Asset/Background/Dic bgr/dic bgr 34.jpg",
+    "Asset/Background/Dic bgr/dic bgr 35.jpg",
+    "Asset/Background/Dic bgr/dic bgr 36.jpg",
+    "Asset/Background/Dic bgr/dic bgr 37.jpg",
+    "Asset/Background/Dic bgr/dic bgr 38.jpg",
+    "Asset/Background/Dic bgr/dic bgr 39.jpg",
+    "Asset/Background/Dic bgr/dic bgr 40.jpg",
+    "Asset/Background/Dic bgr/dic bgr 41.jpg",
+    "Asset/Background/Dic bgr/dic bgr 42.jpg",
+    "Asset/Background/Dic bgr/dic bgr 43.jpg",
+    "Asset/Background/Dic bgr/dic bgr 44.jpg"
+    ]
+
+    setInterval(changeImage, 60000);
+    function changeImage() {   
+        var i = Math.floor((Math.random() * 43));
+        document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:dictionary.js
     }
 }
 
@@ -33,9 +86,19 @@ function data(result, word) {
         document.querySelector(".word span").innerText = phontetics;
         document.querySelector(".meaning span").innerText = definitions.definition;
         document.querySelector(".example span").innerText = definitions.example;
+<<<<<<< HEAD:Asset/dictionary.js
         audio = new Audio("https:" + result[0].phonetics[0].audio);
 
         if (definitions.synonyms[0] == undefined) {
+=======
+        let phonetics = result[0].phonetics
+        for (let e of phonetics) {
+            if (e.audio != "") {
+                audio = new Audio(e.audio);
+            }
+        }
+        if(definitions.synonyms[0] == undefined){
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:dictionary.js
             synonyms.parentElement.style.display = "none";
         } else {
             synonyms.parentElement.style.display = "block";
@@ -58,9 +121,14 @@ function fetchApi(word) {
     wrapper.classList.remove("active");
     infoText.style.color = "#000";
     infoText.innerHTML = `Searching the meaning of <span>"${word}"</span>`;
+<<<<<<< HEAD:Asset/dictionary.js
     //let url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl={en}&tl={vi}&dt=t&q=${word}`;
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     fetch(url).then(response => response.json()).then(result => data(result, word)).catch(() => {
+=======
+    let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}  `;
+    fetch(url).then(response => response.json()).then(result => data(result, word)).catch(() =>{
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:dictionary.js
         infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
     });
 }

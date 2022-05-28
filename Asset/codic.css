@@ -24,7 +24,6 @@ body {
     align-items: center;
     height: fit-content;
     background-color: whitesmoke;
-    position: sticky;
     padding: 10px;
 }
 
@@ -52,7 +51,7 @@ a {
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 900px;
+    width: 800px;
 }
 
 .menu-item {
@@ -77,20 +76,22 @@ a {
     background-image: url(Asset/Background/slogan\ bgr.jpg);
     background-size: cover;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 30px
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px;
+    padding: 0 50px;
+    /* height: 100vh; */
 }
 
 .slogan {
     color: rgb(255, 254, 254);
     font-weight: 300;
-    padding: 130px 0 30px 50px;
+    padding: 130px 0 30px 0px;
 }
 
 .slogan>div>div>h1 {
     font-size: 65px;
 }
+<<<<<<< HEAD:Asset/codic.css
 
 /* .typing{
     overflow: hidden; Ensures the content is not revealed until the animation
@@ -115,6 +116,9 @@ The typewriter cursor effect
   50% { border-color: orange; }
 } */
 .slogan>p {
+=======
+.slogan > p{
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:codic.css
     margin-top: 30px;
     font-size: 21px;
     line-height: 150%;
@@ -122,11 +126,12 @@ The typewriter cursor effect
 
 .slogan-image {
     display: grid;
-    height: 430px;
-    margin: 80px 50px 150px 0;
+    height: 420px;
+    margin: 80px 0 150px 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
+<<<<<<< HEAD:Asset/codic.css
 }
 
 .slogan-image>div>img {
@@ -136,6 +141,10 @@ The typewriter cursor effect
 
 .slogan>div {
     margin: auto;
+=======
+    text-align: center;
+    width: 100%;
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:codic.css
 }
 
 .slg-img1 {
@@ -153,8 +162,21 @@ The typewriter cursor effect
 .slg-img4 {
     grid-row: 3/5;
 }
+<<<<<<< HEAD:Asset/codic.css
 
 .btn-white {
+=======
+.slogan-image > div > img{
+    height: 100%;
+    border-radius: 12px;
+    width: 180px;
+}
+.slogan > div{
+    margin: auto;
+}
+
+.btn-white{
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:codic.css
     width: fit-content;
     padding: 10px;
     border: 1px solid black;
@@ -169,6 +191,27 @@ The typewriter cursor effect
     background-color: #DB6400;
     border-radius: 8px;
     transform: scale(1.15);
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+/* BUTTON TO SCROLL TOP */
+.top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 20px 25px;
+    border-radius: 50%;
+    color: black;
+}
+.top-btn > i:hover{
+    transform: scale(1.15);
+    transform: translateY(-5px);
     transition: ease-out;
     transition-duration: 0.3s;
 }
@@ -241,17 +284,21 @@ The typewriter cursor effect
     text-align: center;
     background-image: url(Asset/Background/bgr3.jpg);
     background-size: cover;
+    /* height: 100vh; */
 }
+<<<<<<< HEAD:Asset/codic.css
 
 /* .remember-element > h1{
     color: white;
 } */
 .element-number {
+=======
+.element-number{
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:codic.css
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 70%;
     margin: 30px auto;
-    /* color: white; */
 }
 
 .element-number>div>h2 {
@@ -264,9 +311,12 @@ The typewriter cursor effect
 
 .element-content {
     display: grid;
-    grid-template-columns: 0.75fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     text-align: left;
-    padding: 20px;
+    grid-gap: 0 40px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
 }
 
 .element-content-img {
@@ -305,7 +355,8 @@ The typewriter cursor effect
 .element-content-list {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 0.1fr 0.1fr 0.8fr;
+    grid-template-columns: 0.1fr 0.1fr 0.7fr;
+    overflow: hidden;
 }
 
 .element-content-list>div {
@@ -501,6 +552,7 @@ The typewriter cursor effect
 
 .user-infor>div>h2 {
     font-size: 24px;
+    text-align: left;
 }
 
 .user-infor>div>p {
@@ -515,6 +567,7 @@ The typewriter cursor effect
     font-size: 18px;
 }
 
+<<<<<<< HEAD:Asset/codic.css
 /* PARTNER -DIV 6*/
 .partner {
     background-image: url(Asset/Background/bgr6.jpg);
@@ -542,6 +595,11 @@ The typewriter cursor effect
 
 /* START LEARNING - BACKGROUND 7 */
 .start-learning {
+=======
+
+/* START LEARNING - BACKGROUND 6 */
+.start-learning{
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:codic.css
     background-image: url(Asset/Background/bgr7.jpg);
     background-size: cover;
 }
@@ -568,6 +626,7 @@ The typewriter cursor effect
     background-image: url(Asset/Background/learn\ word.jpg);
     background-size: cover;
     border-radius: 18px 18px 0 0;
+    height: fit-content;
 }
 
 .list>ul {
@@ -578,8 +637,17 @@ The typewriter cursor effect
 .learning-section-name>a {
     color: black;
 }
+<<<<<<< HEAD:Asset/codic.css
 
 .scale :hover {
+=======
+.scale{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.758);
+    border-radius: 8px;
+}
+.scale :hover{
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:codic.css
     transform: translate(100px);
 }
 
@@ -592,6 +660,28 @@ The typewriter cursor effect
     line-height: 200%;
     background-color: rgb(68, 170, 204);
     border-radius: 0 0 18px 18px;
+}
+
+/* PARTNER -DIV 7*/
+.partner{
+    background-image: url(Asset/Background/bgr6.jpg);
+    background-size: cover;
+}
+.partner-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    grid-row-gap: 100px;
+    padding: 50px;
+}
+.partner > div {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 200%;
+}
+.partner-list > div > img{
+    width: 100px;
 }
 
 /* FOOTER - DIV 8 */

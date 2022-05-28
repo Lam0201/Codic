@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
+<<<<<<< HEAD:Asset/log in.html
     <link rel="stylesheet" href="/Asset/log in.css">
     <link rel="stylesheet" href="/Asset/codic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+=======
+    <link rel="stylesheet" href="log in.css">
+    <link rel="stylesheet" href="codic.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:log in.html
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -24,6 +30,7 @@
             </a>
         </div>
         <div class="menu">
+<<<<<<< HEAD:Asset/log in.html
             <div class="menu-item"><a href="/Asset/codic.html">Trang chủ</a></div>
             <div class="menu-item"><a href="/Asset/introduction.html">Giới thiệu</a></div>
             <div class="menu-item"><a href="#">Học tập</a></div>
@@ -31,19 +38,26 @@
             <div class="menu-item"><a href="/Asset/contact.html">Liên hệ</a></div>
             <div class="menu-item"><a href="/Asset/log in.html">Đăng nhập</a></div>
             <div class="menu-item"><a href="/Asset/sign up.html">Đăng ký</a></div>
+=======
+            <div class="menu-item"><a href="codic.html">Trang chủ</a></div>
+            <div class="menu-item"><a href="introduction.html">Giới thiệu</a></div>
+            <div class="menu-item"><a href="#">Học tập</a></div>
+            <div class="menu-item"><a href="contact.html">Liên hệ</a></div>
+            <div class="menu-item"><a href="log in.html">Đăng nhập</a></div>
+            <div class="menu-item"><a href="sign up.html">Đăng ký</a></div>
+>>>>>>> 9e17c30b1b4f312260882a97c62ac9ef73a6453e:log in.html
         </div>
     </div>
     <section>
-        <!--Bắt Đầu Phần Hình Ảnh-->
-        <div class="img-bg">
-            <img src="https://niemvuilaptrinh.ams3.cdn.digitaloceanspaces.com/tao_trang_dang_nhap/hinh_anh_minh_hoa.jpg"
-                alt="Hình Ảnh Minh Họa">
-        </div>
-        <!--Kết Thúc Phần Hình Ảnh-->
+        <img class="login-img-bottom"
+        data-aos="fade-up-right"
+        data-aos-duration="2000"
+        src="Asset/Background/log in img.jpg" 
+        alt="Ảnh đăng nhập">
         <!--Bắt Đầu Phần Nội Dung-->
         <div class="content">
             <div class="form">
-                <h2>Trang Đăng Nhập</h2>
+                <h2>Đăng Nhập</h2>
                 <form action="">
                     <div class="input-form">
                         <span>Tên Người Dùng</span>
@@ -72,7 +86,16 @@
             </div>
         </div>
         <!--Kết Thúc Phần Nội Dung-->
+        <img class="login-img-top"
+        data-aos="fade-down-left"
+        data-aos-duration="2000"
+        src="Asset/Background/log in img2.jpg" alt="Ảnh đăng nhập">
     </section>
+    <div id=mess></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
