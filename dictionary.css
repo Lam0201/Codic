@@ -12,6 +12,7 @@ body{
   min-height: 100vh;
   background-size: cover;
   background-image: url(Asset/Background/dictionary\ bgr.jpg);
+  transition: all 0.2s ease;
 }
 .dictionary{
   display: flex;

@@ -1,0 +1,126 @@
+body{
+    background-image: url(Asset/Background/bgr3.jpg);
+    background-size: cover;
+    transition: all 0.2s ease;
+}
+.element-dictionary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.wrapper{
+    width: 70%;
+    border-radius: 7px;
+    background: #fff;
+    padding: 25px 28px 45px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.heading2{
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+}
+.search{
+    position: relative;
+    margin: 35px 0 18px;
+}
+.search > input{
+    font-family: Montserrat Reg;
+    height: 53px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 42px;
+    border: 1px solid #999;
+}
+.search input:focus{
+    padding: 0 41px;
+    border: 2px solid #4D59FB;
+}
+.search input::placeholder{
+    color: #B8B8B8;
+}
+.search :where(i, span){
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+}
+.search i{
+    left: 18px;
+    pointer-events: none;
+    font-size: 16px;
+}
+.search input:focus ~ i{
+    color: #4D59FB;
+}
+.search span{
+    right: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+.search input:valid ~ span{
+    display: block;
+}
+.wrapper .info-text{
+    font-size: 15px;
+    color: #9A9A9A;
+    margin: -3px 0 -10px;
+}
+.wrapper.active .info-text{
+    display: none;
+}
+.wrapper ul{
+    /* height: 0; */
+    /* opacity: 0; */
+    padding-right: 1px;
+    /* overflow-y: hidden; */
+    transition: all 0.2s ease;
+}
+.wrapper.active ul{
+    opacity: 1;
+    height: 303px;
+}
+.wrapper ul li{
+    display: flex;
+    list-style: none;
+    margin-bottom: 14px;
+    align-items: center;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #D9D9D9;
+    justify-content: space-between;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+ul .element p{
+    font-size: 22px;
+    font-weight: 500;
+}
+ul .content{
+    max-height: 215px;
+    overflow-y: auto;
+}
+ul .content::-webkit-scrollbar{
+    width: 0px;
+}
+.content li .details{
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 2px solid #4D59FB;
+    width: 100%;
+}
+.content li p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.content li span{
+    font-size: 15px;
+    color: #7E7E7E;
+}
