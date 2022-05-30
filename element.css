@@ -1,0 +1,27 @@
+.html-element{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 5px;
+}
+.element-item{
+    position: relative;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+.element-item-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    /* height: 0;
+    opacity: 0; */
+    padding-right: 1px;
+    overflow-y: hidden;
+    transition: all 0.2s ease;
+}
+.element-item h3.click .element-item-content{
+    opacity: 1;
+    height: 303px;
+}

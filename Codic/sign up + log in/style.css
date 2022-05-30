@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;}
+a{
+    text-decoration: none;
+}
+#passMess {
+    color: red;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.titleContent {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+#signup{
+    display: grid;
+    justify-content: center;
+}
+#login{
+    display: grid;
+    justify-content: center;
+}
+#sendBtn {
+    display: flex;
+    justify-content: center;
+    background-color: #FF546B;
+}
