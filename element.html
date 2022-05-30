@@ -2,14 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">  
-    <title>Thẻ HTML, CSS, JS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển</title>
     <link rel="stylesheet" href="element.css">
     <link rel="stylesheet" href="codic.css">
-    <!-- CDN Link for Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <body>
     <!-- TASK BAR -->
     <div class="navi-bar">
@@ -22,62 +18,66 @@
       <div class="menu">
           <div class="menu-item"><a href="codic.html">Trang chủ</a></div>
           <div class="menu-item"><a href="introduction.html">Giới thiệu</a></div>
-          <div class="menu-item"><a href="#">Học tập</a></div>
+          <div class="menu-item dropdown">
+              <a href="#">Học tập</a>
+              <div class="dropdown-content">
+                  <a href="dictionary.html">Từ điển</a>
+                  <a href="element.html">Các loại thẻ</a>
+                  <a href="exercise.html">Bài tập</a>
+              </div>
+          </div>
           <div class="menu-item"><a href="contact.html">Liên hệ</a></div>
           <div class="menu-item"><a href="log in.html">Đăng nhập</a></div>
           <div class="menu-item"><a href="sign up.html">Đăng ký</a></div>
       </div>
-    </div>
+  </div>
 
     <!-- DICTIONARY -->
-    <div class="element-dictionary">
-        <div class="wrapper">
-            <header class="heading2">Từ điển thẻ HTML, CSS, JS</header>
-            <div class="search">
-                <input type="text" placeholder="Tìm kiếm thẻ">
-                <i class="fas fa-search"></i>
-                <span class="material-icons">close</span>
-            </div>
-            <p class="info-text">Nhập từ và ấn enter xem ý nghĩa và cách dùng của thẻ</p>
-            <ul>
-                <div class="element-content">
-                    <li class="element">
-                        <div class="details">
-                        <p>__</p>
-                        </div>
-                    </li>
-                    <li class="standfor">
-                        <div class="details">
-                        <p>Viết tắt của</p>
-                        <span>___</span>
-                        </div>
-                    </li>
+   <div class="html-element-container">
+       <h1 class="heading1">Thẻ HTML</h1>
+       <div class="element-item">
+           <h3>Comment</h3>
+           <div class="element-content">
+                <div>
+                    <h4>Tên thẻ</h4>
+                    <p>Comment</p>
                 </div>
-                <div class="content">
-                    <li class="meaning">
-                        <div class="details">
-                            <p>Ý nghĩa</p>
-                            <span>___</span>
-                        </div>
-                    </li>
-                    <li class="example">
-                        <div class="details">
-                            <p>Ví dụ</p>
-                            <span>___</span>
-                        </div>
-                    </li>
-                    <li class="browser">
-                        <div class="details">
-                            <p>Trình duyệt</p>
-                            <span>___</span>
-                        </div>
-                    </li>
+                <div>
+                    <h4>Ý nghĩa</h4>
+                    <p>Bình luận</p>
                 </div>
-            </ul>
-        </div>
-    </div>
-    
-    <script src="dictionary.js"></script>
+                <div>
+                    <h4>Ví dụ</h4>
+                    <p>&lt!--This can be viewed in the HTML part of a document--&gt</p>
+                </div>
+                <div>
+                    <h4>Trình duyệt</h4>
+                    <p>Nothing will be shown</p>
+                </div>
+           </div>
+       </div>
+       <div class="element-item">
+           <h3>Comment</h3>
+           <div class="element-content">
+                <div>
+                    <h4>Tên thẻ</h4>
+                    <p>a - Anchor</p>
+                </div>
+                <div>
+                    <h4>Ý nghĩa</h4>
+                    <p>Mỏ neo - Đường dẫn link</p>
+                </div>
+                <div>
+                    <h4>Ví dụ</h4>
+                    <p>&lta href="codic.html"> Visit Our Site&gt"</p>
+                </div>
+                <div>
+                    <h4>Trình duyệt</h4>
+                    <a href="codic.html"> Visit Our Site</a>
+                </div>
+           </div>
+       </div>
 
+   </div>
   </body>
 </html>
