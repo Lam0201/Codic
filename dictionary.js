@@ -71,19 +71,20 @@ function data(result, word){
         wrapper.classList.add("active");
         let definitions = result[0].meanings[0].definitions[0],
             phontetics = `${result[0].meanings[0].partOfSpeech}  /${result[0].phonetics[0].text}/`;
-            document.querySelector(".word p").innerText = result[0].word;
-            document.querySelector(".word span").innerText = phontetics;
-            document.querySelector(".meaning span").innerText = definitions.definition;
+        document.querySelector(".word p").innerText = result[0].word;
+        document.querySelector(".word span").innerText = phontetics;
+        document.querySelector(".meaning span").innerText = definitions.definition;
+        document.querySelector(".example").style.display ='none'
         
-        //Example undefined
-        let example = result[0].meanings[0].definitions
-        for (let e of example) {
-            if (e.example != "") {
-                example = new Example(e.example);
+        //Example undefined => lấy example tiếp theo
+        let definitionList = result[0].meanings[0].definitions;
+        for (let e of definitionList) {
+            if (e.example != undefined) {
+                document.querySelector(".example").style.display ="block";
+                document.querySelector(".example span").innerText = e.example
             }
         }
-            document.querySelector(".example span").innerText = definitions.example;
-
+            
         //Nếu audio = "" => lấy audio tiếp theo
         let phonetics = result[0].phonetics
         for (let e of phonetics) {
