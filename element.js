@@ -1,4 +1,3 @@
-// phần Nghĩa bổ sung (thôi đang bug nên bỏ qua :) )
 // nhập khẩu nhân công elementArr
 import { elementArr } from "./element database.js";
 // gọi class cụ tổ html-element:
@@ -36,12 +35,14 @@ function allTag () {
       // thẻ example
       let tagExample = document.createElement("h4");
       tagExample.className = "tag-example";
+      tagExample.innerText = "Ví dụ";
       let tagExampleContent = document.createElement("p");
       tagExampleContent.className = "example";
       tagExampleContent.innerText = elementArr[a].example;
       // thẻ browser
       let tagBrowser = document.createElement("h4");
       tagBrowser.className = "tag-browser";
+      tagBrowser.innerText = "Trình duyệt";
       let tagBrowserContent = document.createElement("p");
       tagBrowserContent.className = "browser";
       tagBrowserContent.innerText = elementArr[a].browser;
