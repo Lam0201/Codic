@@ -2,7 +2,7 @@
 let elementArr = [
   {
     id: "comment",
-    name: "<!--...--> - Comment",
+    name: "<!--(comment)-->",
     meaning: "Bình luận",
     example: "<!--This can be viewed in the HTML part of a document-->",
   },

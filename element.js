@@ -1,3 +1,66 @@
+// phần Nghĩa bổ sung (thôi đang bug nên bỏ qua :) )
+// nhập khẩu nhân công elementArr
+import { elementArr } from "./element database.js";
+// gọi class cụ tổ html-element:
+let htmlElement = document.querySelector(".html-element");
+
+function allTag () {
+  for (let a = 0; a < elementArr.length; a++) {
+    // tạo thẻ chứa nút và nội dung
+    let elementContainer = document.createElement("div");
+    elementContainer.className = "element-item-container";
+    // tạo các nút bấm có tên thẻ
+    let elementItem = document.createElement("button");
+    elementItem.className = "element-item";
+    elementItem.value = elementArr[a].id;
+    elementItem.innerText = elementArr[a].name;
+    // tạo thẻ chứa các nội dung
+    let elementContent = document.createElement("div");
+    elementContent.className = "element-item-content";
+    elementContent.setAttribute("id", elementArr[a].id);
+    // tạo các nội dung
+      // thẻ name
+      let tagName = document.createElement("h4");
+      tagName.className = "tag-name";
+      tagName.innerText = "Tên thẻ";
+      let tagNameContent = document.createElement("p");
+      tagNameContent.className = "name";
+      tagNameContent.innerText = elementArr[a].id;
+      // thẻ meaning
+      let tagMeaning = document.createElement("h4");
+      tagMeaning.className = "tag-meaning";
+      tagMeaning.innerText = "Ý nghĩa";
+      let tagMeaningContent = document.createElement("p");
+      tagMeaningContent.className = "meaning";
+      tagMeaningContent.innerText = elementArr[a].meaning;
+      // thẻ example
+      let tagExample = document.createElement("h4");
+      tagExample.className = "tag-example";
+      let tagExampleContent = document.createElement("p");
+      tagExampleContent.className = "example";
+      tagExampleContent.innerText = elementArr[a].example;
+      // thẻ browser
+      let tagBrowser = document.createElement("h4");
+      tagBrowser.className = "tag-browser";
+      let tagBrowserContent = document.createElement("p");
+      tagBrowserContent.className = "browser";
+      tagBrowserContent.innerText = elementArr[a].browser;
+    // gán các thẻ tùm lum ở trên vào html
+    htmlElement.appendChild(elementContainer);
+    elementContainer.appendChild(elementItem);
+    elementContainer.appendChild(elementContent);
+    elementContent.appendChild(tagName);
+    elementContent.appendChild(tagNameContent);
+    elementContent.appendChild(tagMeaning);
+    elementContent.appendChild(tagMeaningContent);
+    elementContent.appendChild(tagExample);
+    elementContent.appendChild(tagExampleContent);
+    elementContent.appendChild(tagBrowser);
+    elementContent.appendChild(tagBrowserContent);
+  }
+}
+allTag();
+
 //Thêm hoặc bớt class="show"
 function myFunction(id) {
   document.getElementById(id).classList.toggle("show");
@@ -29,44 +92,7 @@ window.addEventListener("click", function () {
   }
 });
 
-// phần Nghĩa bổ sung (thôi đang bug nên bỏ qua :) )
 
-// nhập khẩu nhân công elementArr
-import { elementArr } from "./element database.js";
-
-// gọi class cụ tổ html-element:
-let htmlElement = document.querySelector(".html-element");
-
-
-// for (let a = 0; a < elementArr.length; a++) {
-//   // tạo thẻ chứa nút và nội dung
-//   let elementContainer = document.createElement("div");
-//   elementContainer.className = "element-item-container";
-//   // tạo các nút bấm có tên thẻ
-//   let elementItem = document.createElement("button");
-//   elementItem.className = "element-item";
-//   elementItem.value = elementArr[a].id;
-//   // tạo các thẻ chứa nội dung
-//   let elementContent = document.getElementsByClassName("element-item-content");
-//   let tagName = document.createElement("h4");
-//   tagName.className = "tag-name";
-//   tagName.innerText = "Tên thẻ";
-//   let tagMeaning = document.createElement("h4");
-//   tagMeaning.className = "tag-meaning";
-//   tagMeaning.innerText = "Ý nghĩa"
-//   let tagExample = document.createElement("h4");
-//   tagExample.className = "tag-example";
-//   let tagBrowser = document.createElement("h4");
-//   tagBrowser.className = "tag-browser";
-//   // gán các thẻ tùm lum ở trên vào html
-//   htmlElement.appendChild(elementContainer);
-//   elementContainer.appendChild(elementItem);
-//   elementItem.append(elementContent);
-//   elementContent[a].appendChild(tagName);
-//   elementContent[a].appendChild(tagMeaning);
-//   elementContent[a].appendChild(tagExample);
-//   elementContent[a].appendChild(tagBrowser);
-// }
 
 
 
