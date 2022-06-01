@@ -55,7 +55,7 @@ a{
 .menu-item:hover{
     background-color: #a8c9f8;
     border-radius: 8px;
-    transform: scale(1.15);
+    transform: scale(1.1);
     transition: ease-out;
     transition-duration: 0.3s;
 }
@@ -71,10 +71,10 @@ a{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9de;
+    background-color: #f9f9f9;
     border-radius: 5px;
     min-width: 130px;
-    z-index: 2;
+    z-index: 10;
     margin-top: 7px;
 }
   .dropdown-content a {
