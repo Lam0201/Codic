@@ -51,9 +51,9 @@ let elementArr = [
   // {
   //   name: "<dl>",
   //   meaning: "Definition list - Danh sách định nghĩa",
-  //   example: "<dl>
-  //   <dt>Definition Term</dt>
-  //   <dd>Definition of the term</dd>
+  //   example: "<dl> \n
+  //   <dt>Definition Term</dt> \n
+  //   <dd>Definition of the term</dd> \n
   //   </dl>",
   // },
   // {

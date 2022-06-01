@@ -46,7 +46,7 @@ function allTag () {
       tagBrowser.innerText = "Trình duyệt";
       let tagBrowserContent = document.createElement("p");
       tagBrowserContent.className = "browser";
-      tagBrowserContent.innerText = elementArr[a].browser;
+      tagBrowserContent.innerHTML = elementArr[a].example;
     // gán các thẻ tùm lum ở trên vào html
     htmlElement.appendChild(elementContainer);
     elementContainer.appendChild(elementItem);
