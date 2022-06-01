@@ -5,9 +5,11 @@ body{
     background-image: url(Asset/Background/sign\ up\ bgr.jpg);
     background-size: cover;
     /* height: 100%; */
+    z-index: 0;
+    position: relative;
 }
 section{
-    position: relative;
+    
 }
 .sign-up-img{
     position: absolute;
@@ -36,7 +38,7 @@ section{
 .content > img{
     width: 280px;
     border-radius: 18px;
-    z-index: 2;
+    z-index: 1;
 }
 .top-img{
     position: absolute;
