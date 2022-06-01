@@ -1,4 +1,3 @@
-// phần Nghĩa bổ sung (thôi đang bug nên bỏ qua :) )
 // nhập khẩu nhân công elementArr
 import { elementArr } from "./element database.js";
 // gọi class cụ tổ html-element:
