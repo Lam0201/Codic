@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    width: 100%;
+    text-align: justify;
+
+}
+
+.Lists {
+    display: flex;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.css {
+    background-color: white;
+    color: black;
+    width: fit-content;
+    margin: 5px;
+
+}
+
+.definition {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.meaning {
+    padding: 5px;
+}
+
+#time {
+    align-items: center;
+    font-size: 30px;
+}
+
+.blank {
+    border: 1px solid black;
+    padding-inline: 50px;
+    background-color: white;
+}
