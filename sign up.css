@@ -8,9 +8,6 @@ body{
     z-index: 0;
     position: relative;
 }
-section{
-    
-}
 .sign-up-img{
     position: absolute;
     left: 100px;
@@ -99,6 +96,7 @@ section{
     color: white;
 }
 .remember-info{
+    : ;
     margin-bottom: 10px;
     color: #607d8b;
     font-size: 14px;

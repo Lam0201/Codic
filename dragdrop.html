@@ -7,7 +7,7 @@
     <title>Bài tập kéo thả</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='dragdrop.css'>
-    <link rel="stylesheet" href="/codic.css">
+    <link rel="stylesheet" href="codic.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <div class="navi-bar">
         <div class="logo">
             <a href="btck.html">
-                <img class="logo-image" src="/Asset/Icon/codic.png" alt="Từ điển lập trình">
+                <img class="logo-image" src="/BTCK/Asset/Icon/codic.png" alt="Từ điển lập trình">
                 Codic
             </a>
         </div>
@@ -35,20 +35,27 @@
             <div class="menu-item"><a href="sign up.html">Đăng ký</a></div>
         </div>
     </div>
-    <h1 class="heading1">Kéo và thả - Drag and drop</h1>
-    <p class="center"> Bạn có 10 giây để điền các từ vào đúng ô trống</p>
-    <div class="definition">
-        <div class="board1">
-            <!-- <p class="meaning"><span class="blank" id="background-color"></span>: màu nền</p> -->
+    <div class="dragdrop-game">
+        <h1 class="heading1">Kéo và thả - Drag and drop</h1>
+        <p class="center"> Bạn có 10 giây để điền các từ vào đúng ô trống</p>
+        <div class="game-area">
+            <div class="definition">
+                <div class="board1">
+                    <!-- <p class="meaning"><span class="blank" id="background-color"></span>: màu nền</p> -->
+                </div>
+                <div id="time"></div>
+            </div>
+            <div class="Lists">
+                <!-- <p class="css" draggable="true"></p> -->
+            </div>
         </div>
-        <div id="time"></div>
+        <div class="btn">
+            <button type="button" id="nextStage">Continue</button>
+            <button type="button" id="retry">Retry</button>
+        </div>
+        
     </div>
-    <div class="Lists">
-        <!-- <p class="css" draggable="true"></p> -->
-    </div>
-    <button type="button" id="nextStage">continue</button>
-    <button type="button" id="retry">retry</button>
-
+    
     <script src='dragdrop.js'></script>
 </body>
 

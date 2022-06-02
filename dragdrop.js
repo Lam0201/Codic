@@ -95,7 +95,7 @@ function dragNdrop() {
     for (let i = 0; i < number; i++) {
         let item = lists.children[i];
         let blank = board.children[i].children[0];
-        
+
         // event Drag Start: bắt đầu kéo
         item.addEventListener("dragstart", function (event) {
             // từ được kéo draggedItem sẽ là từ được chọn bởi event dragStart
@@ -109,14 +109,14 @@ function dragNdrop() {
         })
 
         // event Drag Over: kéo đến nơi
-        blank.addEventListener("dragover", function(event) {
+        blank.addEventListener("dragover", function (event) {
             event.preventDefault();
         })
 
         // event Drag End: thả vật đc kéo ra
         item.addEventListener("dragend", function () {
             // thả thẻ item ra thì hiện lại
-            setTimeout(function() {
+            setTimeout(function () {
                 item.style.display = "inline";
             }, 0)
             // nếu gán được vào thẻ cha có tên là blank thì thẻ từ tiếng anh này ko drag được nữa
@@ -126,7 +126,7 @@ function dragNdrop() {
         })
 
         // event Drop: vật được kéo lắp vào ô trống
-        blank.addEventListener("drop", function(event) {
+        blank.addEventListener("drop", function (event) {
             // sử dụng event.dataTransfer.getData() để lấy giá trị của vật được thả từ bộ nhớ tạm,
             // event.target. để lấy giá trị của target
             let dropped = event.target.getAttribute("id");
@@ -135,7 +135,8 @@ function dragNdrop() {
             if (dragged == dropped) {
                 // nếu prepend item thì sẽ bị sai vì có thể bộ đếm for sẽ đếm giá trị i của blank - ô được thả từ vào. và nó khả năng cao sẽ khác với giá trị i của item
                 blank.prepend(draggedItem);
-                blank.style.padding = "0";
+                blank.style.padding = "5px 0px 5px 0px";
+                item.style.padding = "5px";
             }
         })
     }

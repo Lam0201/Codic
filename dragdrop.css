@@ -1,0 +1,133 @@
+body {
+    height: 100vh;
+    width: 100%;
+    text-align: justify;
+    overflow: hidden;
+}
+/* Căn giữa */
+.center{
+    text-align: center;
+    font-size: 30px;
+}
+/* background toàn màn hình */
+.dragdrop-game{
+    background-image: url(Asset/Background/dragdrop\ bgr.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+/* CSS khu vực chơi */
+.game-area{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+}
+/* danh sách chứa các thẻ từ tiếng anh để kéo */
+.Lists {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 24px;
+}
+/* các thẻ từ tiếng anh cần kéo */
+.css {
+    background-color: #F4BFBF;
+    color: black;
+    padding: 5px;
+    width: max-content;
+    height: fit-content;
+    margin: 5px;
+    border-radius: 8px;
+}
+/* chứa định nghĩa, các ô trống và đếm ngược thời gian */
+.definition {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.734);
+    border-radius: 12px;
+    padding: 20px;
+}
+.board1{
+    font-size: 24px;
+}
+/* định nghĩa của các thẻ từ tiếng anh được kéo */
+.meaning {
+    padding: 5px;
+    line-height: 170%;
+}
+/* đếm ngược thời gian */
+#time {
+    align-items: center;
+    font-size: 30px;
+}
+/* ô trống để thả từ tiếng anh được kéo vào */
+.blank {
+    border: 1px solid black;
+    padding: 7px;
+    padding-inline: 80px;
+    background-color: #F4BFBF;
+    border-radius: 12px;
+    
+}
+/* div chứa các button */
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+/* nút chuyển màn chơi tiếp theo */
+#nextStage {
+    margin: 10px auto 10px auto;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #B7E5DD;
+    border-color: rgba(0, 0, 0, 0.603);
+    color: black;
+    transition-duration: 0.4s;
+    padding: 5px 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+}
+#nextStage:hover {
+    background-color: #F4BFBF;
+    color: black; 
+    transform: translateY(8px);
+    transition: ease-out;
+    transition-duration: 0.3s;   
+}
+#nextStage:active {
+    transform: translateY(1.5px);
+}
+/* nút chơi lại */
+#retry {
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.525);
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #B7E5DD;
+    color: black;
+    transition-duration: 0.4s;
+    padding: 5px 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+}
+#retry:hover {
+    background-color: #F4BFBF;
+    color: black;    
+    transform: translateY(8px);
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+#retry:active {
+    transform: translateY(1.5px);
+}

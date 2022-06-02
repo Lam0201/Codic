@@ -4,11 +4,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Bài tập</title>
+    <title>Trò chơi diệt Bug</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <link rel="stylesheet" href="/BTCK/codic.css">
-    <link rel="stylesheet" href="frog.css">
+    <link rel="stylesheet" href="codic.css">
     <style>
         body {
             background-image: linear-gradient(45deg, pink, orange);
@@ -21,6 +20,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            border-radius: 12px;
         }
 
         #gameScreen {
@@ -74,9 +74,6 @@
             transform: translateY(1.5px);
         }
 
-        #task {
-
-        }
         #bug { 
             margin: 10px;
             height: calc(40vw - 15px);
@@ -85,19 +82,47 @@
         }
 
         #fire {
-
             height: calc(40vw);
             min-height: calc(300px);
             max-height: calc(80vh);
-            
         }
-
-       
     </style>
     <script src="https://kit.fontawesome.com/7f093e4826.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- TASK BAR -->
+    <div class="navi-bar">
+        <div class="logo">
+            <a href="btck.html">
+                <img class="logo-image" src="Asset/Icon/codic.png" alt="Từ điển lập trình">
+                Codic
+            </a>
+        </div>
+        <div class="menu">
+            <div class="menu-item"><a href="codic.html">Trang chủ</a></div>
+            <div class="menu-item"><a href="introduction.html">Giới thiệu</a></div>
+            <div class="menu-item dropdown">
+                <a href="exercise.html">Học tập</a>
+                <div class="dropdown-content">
+                    <a href="dictionary.html">Từ điển</a>
+                    <a href="element.html">Các loại thẻ</a>
+                    <a href="exercise.html">Bài tập</a>
+                </div>
+            </div>
+            <div class="menu-item"><a href="contact.html">Liên hệ</a></div>
+            <div class="menu-item"><a href="log in.html">Đăng nhập</a></div>
+            <div class="menu-item"><a href="sign up.html">Đăng ký</a></div>
+        </div>
+    </div>
+
+    <!-- GAME -->
+    <p style="font-size: 20px; color:black">DA GAME: THIS BUG IS ON FIREEEEEEE</p>
+        <p> Trong lúc code, chắc chắn các bạn sẽ gặp những chú bọ rất "đáng yêu".
+            <br /> CHÚNG PHÁ CHƯƠNG TRÌNH CỦA BẠN.
+            <br /> CHÚNG THẬT LÀ KHỐN LẠN.
+            <br /> HÃY NÉM CHÚNG VÀO LỬA NÀOOOOOO !!!
+        </p>
     <div id="gameScreen">
         <div id="gameArea" style="border:1px solid black">
             <div id="bug">
@@ -112,21 +137,17 @@
 
     </div>
     <div id="codeScreen">
-        <p style="font-size: 20px; color:black">DA GAME: THIS BUG IS ON FIREEEEEEE</p>
-        <p> Trong lúc code, chắc chắn các bạn sẽ gặp những chú bọ rất "đáng yêu".
-            <br /> CHÚNG PHÁ CHƯƠNG TRÌNH CỦA BẠN.
-            <br /> CHÚNG THẬT LÀ KHỐN LẠN.
-            <br /> HÃY NÉM CHÚNG VÀO LỬA NÀOOOOOO !!!
-        </p>
         <p id="task"></p>
         <textarea id="userCode" rows="5" cols="60"></textarea>
-        <br/>
+        <br />
         <button type="button" id="nextStage">continue</button>
     </div>
 
 
 
-    <script src='frog.js'></script>
+
+
+    <script src='bug.js'></script>
 </body>
 
 </html>
