@@ -1,5 +1,4 @@
-
-let login = document.getElementById("form")
+let login = document.getElementById("login")
 if (!localStorage.users) {
     localStorage.users = JSON.stringify([]);
 }
@@ -9,15 +8,11 @@ login.addEventListener("submit", (e) => {
 
     let localUsers = JSON.parse(localStorage.users);
 
-    let isExist = false
     for (let users of localUsers) {
-        if (users.username === e.target.username.value && users.password === e.target.value.password){
-            isExist = true
+        if (users.username === e.target.username.value && users.password === e.target.password.value) {
+            document.location.href = "/codic.html"
+        } else {
+            document.getElementById("password-messenger").innerHTML = "tên đăng nhập hoặc mật khẩu không đúng"
         }
     }
 })
-if (isExist = true){
-    console.log("sai tên đăng nhâp hoặc mật khẩu")
-} else {
-    console.log("đăng nhập thành công")
-}
