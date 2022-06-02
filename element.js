@@ -18,13 +18,6 @@ function allTag () {
     elementContent.className = "element-item-content";
     elementContent.setAttribute("id", elementArr[a].id);
     // tạo các nội dung
-      // thẻ name
-      let tagName = document.createElement("h4");
-      tagName.className = "tag-name";
-      tagName.innerText = "Tên thẻ";
-      let tagNameContent = document.createElement("p");
-      tagNameContent.className = "name";
-      tagNameContent.innerText = elementArr[a].id;
       // thẻ meaning
       let tagMeaning = document.createElement("h4");
       tagMeaning.className = "tag-meaning";
@@ -50,8 +43,6 @@ function allTag () {
     htmlElement.appendChild(elementContainer);
     elementContainer.appendChild(elementItem);
     elementContainer.appendChild(elementContent);
-    elementContent.appendChild(tagName);
-    elementContent.appendChild(tagNameContent);
     elementContent.appendChild(tagMeaning);
     elementContent.appendChild(tagMeaningContent);
     elementContent.appendChild(tagExample);

@@ -26,7 +26,7 @@ let elementArr = [
     name: "<big>",
     meaning: "Big (text) - Cỡ chữ to",
     example: "<big>Example</big>",
-    browser: '',
+    browser: '<big>Example</big>',
   },
   {
     id: "body-tag",
