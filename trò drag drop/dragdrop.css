@@ -4,6 +4,10 @@ body {
     text-align: justify;
     overflow: hidden;
 }
+/* Căn giữa */
+.center{
+    text-align: center;
+}
 
 /* danh sách chứa các thẻ từ tiếng anh để kéo */
 .Lists {
@@ -17,7 +21,6 @@ body {
     color: black;
     width: fit-content;
     margin: 5px;
-
 }
 /* chứa định nghĩa, các ô trống và đếm ngược thời gian */
 .definition {

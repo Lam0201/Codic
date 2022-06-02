@@ -85,7 +85,7 @@ let elementArr = [
     browser: '',
   },
   { id: "heading-tag",
-    name: "<h1>,<h2>,<h3>,<h4>,<h5>,<h6>",
+    name: "<h1> => <h6>",
     meaning: "Heading - Đầu mục",
     example: "<h1>Heading 1 Example</h1>\n<h2>Heading 2 Example</h2>\n<h3>Heading 3 Example</h3>\n<h4>Heading 4 Example</h4>\n<h5>Heading 5 Example</h5>\n<h6>Heading 6 Example</h6>",
     browser: '',
