@@ -15,7 +15,9 @@ let boardArrText = [": màu chữ", ": màu nền", ": khoảng trống ngoài v
 // lưu tên id của các ô trống vào array (giống listArrText)
 let blankIdText = listArrText;
 // đây là số từ sẽ xuất hiện:
-const number = 4;
+let number = 4;
+// đây là thời gian để drag từ vào ô trống:
+let dragTime = 10;
 // đây là từ được kéo, hiện tại ta để mặc định là null
 let draggedItem = null;
 
@@ -143,10 +145,14 @@ function countDownClock() {
     let next = document.getElementById("nextStage");
     // ẩn display nút tiếp tục
     next.style.display = "none"; 
+    // gọi id nút chơi lại
+    let retry = document.getElementById("retry");
+    // ẩn display nút chơi lại
+    retry.style.display = "none"; 
     // gọi id thời gian
     let clock = document.getElementById("time");
     // đặt thời gian làm bài 
-    let now = new Date().setTime(10);
+    let now = new Date().setTime(dragTime);
     // đếm ngược thời gian về 0
     let countDown = setInterval(function() {
         clock.innerHTML = now;
@@ -162,10 +168,11 @@ function countDownClock() {
             }
             clearInterval(countDown);
             if (lists.children.length == 0) {
-                alert("you win!");
+                alert("chúc mừng! Bạn cũng kinh đấy");
                 next.style.display = "block";
             } else {
-                alert("you lose!");
+                alert("Bạn còn non và xanh lắm!");
+                retry.style.display = "block";
             }
         }
         return now;
@@ -175,6 +182,25 @@ function countDownClock() {
         while (board.hasChildNodes()) {
             board.removeChild(board.firstChild);
         }
+        if (number < listArrText.length) {
+            number++;
+            dragTime += 2;
+        } else {
+            alert("bạn đã chơi hết các cấp độ rồi ! bạn khủng khiếp đấy");
+        }
+
+        GamePlay();
+    })
+    // cài đặt chức năng nút chơi lại
+    retry.addEventListener("click", function() {
+        while (board.hasChildNodes()) {
+            board.removeChild(board.firstChild);
+        }
+        while (lists.hasChildNodes()) {
+            lists.removeChild(lists.firstChild);
+        }
+        number = 4;
+        dragTime = 10;
         GamePlay();
     })
 
