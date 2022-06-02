@@ -8,6 +8,15 @@ body{
     z-index: 0;
     position: relative;
 }
+<<<<<<< HEAD
+=======
+section{
+    
+}
+#password-messenger {
+    color:  red;
+}
+>>>>>>> 14ea7df6c2d7eb9d8d1df9b8505c342a1d856db4
 .sign-up-img{
     position: absolute;
     left: 100px;
@@ -21,13 +30,14 @@ body{
     align-items: center;
     height: 100vh;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.589);
     border-radius: 18px;
     height: 90%;
     width: 60%;

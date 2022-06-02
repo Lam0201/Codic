@@ -1,6 +1,6 @@
-// Set random bgr change after 1min
+// Set random bgr change after 5min
 window.onload = function () {
-    var backgroundImg = ["Asset/Background/Dic bgr/dic bgr 1.jpg",
+    var backgroundImg=["Asset/Background/Dic bgr/dic bgr 1.jpg",
     "Asset/Background/Dic bgr/dic bgr 2.jpg",
     "Asset/Background/Dic bgr/dic bgr 3.jpg",
     "Asset/Background/Dic bgr/dic bgr 4.jpg",
@@ -44,17 +44,16 @@ window.onload = function () {
     "Asset/Background/Dic bgr/dic bgr 42.jpg",
     "Asset/Background/Dic bgr/dic bgr 43.jpg",
     "Asset/Background/Dic bgr/dic bgr 44.jpg"
-    ];
+    ]
 
     setInterval(changeImage, 60000);
     function changeImage() {   
         var i = Math.floor((Math.random() * 43));
         document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
     }
-   }
-   
-//Dictionary
-//Gọi thẻ
+}
+
+// Dictionary
 const wrapper = document.querySelector(".wrapper"),
     searchInput = wrapper.querySelector("input"),
     volume = wrapper.querySelector(".word i"),
@@ -63,40 +62,26 @@ const wrapper = document.querySelector(".wrapper"),
     removeIcon = wrapper.querySelector(".search span");
 let audio;
 
-//Gọi giá trị từ API
-function data(result, word){
-    if(result.title){
+function data(result, word) {
+    if (result.title) {
         infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
-    }else{
+    } else {
         wrapper.classList.add("active");
         let definitions = result[0].meanings[0].definitions[0],
             phontetics = `${result[0].meanings[0].partOfSpeech}  /${result[0].phonetics[0].text}/`;
         document.querySelector(".word p").innerText = result[0].word;
         document.querySelector(".word span").innerText = phontetics;
         document.querySelector(".meaning span").innerText = definitions.definition;
-        document.querySelector(".example").style.display ='none'
-        
-        //Example undefined => lấy example tiếp theo
-        let definitionList = result[0].meanings[0].definitions;
-        for (let e of definitionList) {
-            if (e.example != undefined) {
-                document.querySelector(".example").style.display ="block";
-                document.querySelector(".example span").innerText = e.example
-            }
-        }
-            
-        //Nếu audio = "" => lấy audio tiếp theo
+        document.querySelector(".example span").innerText = definitions.example;
         let phonetics = result[0].phonetics
         for (let e of phonetics) {
             if (e.audio != "") {
                 audio = new Audio(e.audio);
             }
         }
-       
-        //Nếu synonyms = undefined => display = none
         if(definitions.synonyms[0] == undefined){
             synonyms.parentElement.style.display = "none";
-        }else{
+        } else {
             synonyms.parentElement.style.display = "block";
             synonyms.innerHTML = "";
             for (let i = 0; i < 5; i++) {
@@ -108,12 +93,12 @@ function data(result, word){
     }
 }
 
-function search(word){
+function search(word) {
     fetchApi(word);
     searchInput.value = word;
 }
 
-function fetchApi(word){
+function fetchApi(word) {
     wrapper.classList.remove("active");
     infoText.style.color = "#000";
     infoText.innerHTML = `Searching the meaning of <span>"${word}"</span>`;
@@ -123,22 +108,22 @@ function fetchApi(word){
     });
 }
 
-searchInput.addEventListener("keyup", e =>{
+searchInput.addEventListener("keyup", e => {
     let word = e.target.value.replace(/\s+/g, ' ');
-    if(e.key == "Enter" && word){
+    if (e.key == "Enter" && word) {
         fetchApi(word);
     }
 });
 
-volume.addEventListener("click", ()=>{
+volume.addEventListener("click", () => {
     volume.style.color = "#4D59FB";
     audio.play();
-    setTimeout(() =>{
+    setTimeout(() => {
         volume.style.color = "#999";
     }, 800);
 });
 
-removeIcon.addEventListener("click", ()=>{
+removeIcon.addEventListener("click", () => {
     searchInput.value = "";
     searchInput.focus();
     wrapper.classList.remove("active");
