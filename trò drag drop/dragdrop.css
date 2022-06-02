@@ -2,7 +2,11 @@ body {
     height: 100vh;
     width: 100%;
     text-align: justify;
-
+    overflow: hidden;
+}
+/* Căn giữa */
+.center{
+    text-align: center;
 }
 
 /* danh sách chứa các thẻ từ tiếng anh để kéo */
@@ -17,7 +21,6 @@ body {
     color: black;
     width: fit-content;
     margin: 5px;
-
 }
 /* chứa định nghĩa, các ô trống và đếm ngược thời gian */
 .definition {
@@ -56,5 +59,21 @@ body {
     color: black;    
 }
 #nextStage:active {
+    transform: translateY(1.5px);
+}
+/* nút chơi lại */
+#retry {
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 50px;
+    background-color: whitesmoke;
+    color: rgb(25, 172, 44);
+    transition-duration: 0.4s;
+}
+#retry:hover {
+    background-color: rgb(55, 224, 21);
+    color: black;    
+}
+#retry:active {
     transform: translateY(1.5px);
 }
