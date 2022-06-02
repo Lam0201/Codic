@@ -175,7 +175,7 @@ let elementArr = [
     id: "paragraph",
     name: "<p>",
     meaning: "Paragraph - Đoạn văn",
-    example: 'This is an example displaying the use of the paragraph tag. <p> This will create a line break and a space between lines.<br>\nAttributes: Example 1:<br>\n<br>\n<p align="left">\nThis is an example<br> displaying the use<br>\nof the paragraph tag.<br>\n<br>\nExample 2:<br>\n<br>\n<p align="right"> This is an example<br> displaying the use<br>\nof the paragraph tag.<br>\n<br>\nExample 3:<br>\n<br>\n<p align="center"> This is an example<br> displaying the use<br> of the paragraph tag.',
+    example: 'This is an example displaying the use of the paragraph tag. <p> This will create a line break and a space between lines.',
     browser: '',
   },
   { 
@@ -203,7 +203,7 @@ let elementArr = [
     id: "table-header",
     name: "<th>",
     meaning: "Table header - Đầu mục của bảng",
-    example: '<div align="center">\n<table>\n<tr>\n<th>Column 1</th>\n<th>Column 2</th>\n<th>Column 3</th>\n</tr>\n<tr>\n<td>Row 2</td>\n<td>Row 2</td>\n<td>Row 2</td>\n</tr>\n<tr>\n<td>Row 3</td>\n<td>Row 3</td>\n<td>Row 3</td>',
+    example: '<div align="center">\n<table>\n<tr>\n<th>Column 1</th>\n<th>Column 2</th>\n</tr>\n<tr>\n<td>Row 2</td>\n<td>Row 2</td>\n</tr>\n<tr>\n<td>Row 3</td>\n<td>Row 3</td>',
     browser: '',
   },
   { 
@@ -231,7 +231,7 @@ let elementArr = [
     id: "unordered-list",
     name: "<ul>",
     meaning: "Unordered list - Danh sách không theo thứ tự",
-    example: 'Example 1:<br>\n<br>\n<ul>\n<li>List item 1</li>\n<li>List item 2</li>\n</ul>\n<br>\nExample 2:<br>\n<ul type="disc">\n<li>List item 1</li>\n<li>List item 2</li>\n<ul type="circle">\n<li>List item 3</li>\n<li>List item 4</li>\n</ul>\n</ul>',
+    example: 'Example 1:<br>\n<br>\n<ul>\n<li>List item 1</li>\n<li>List item 2</li>\n<li>List item 3</li>\n</ul>',
     browser: '',
   },
 ]
