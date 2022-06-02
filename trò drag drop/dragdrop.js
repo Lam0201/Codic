@@ -139,24 +139,45 @@ function dragNdrop() {
     }
 }
 function countDownClock() {
+    // gọi id nút tiếp tục
+    let next = document.getElementById("nextStage");
+    // ẩn display nút tiếp tục
+    next.style.display = "none"; 
+    // gọi id thời gian
     let clock = document.getElementById("time");
+    // đặt thời gian làm bài 
     let now = new Date().setTime(10);
+    // đếm ngược thời gian về 0
     let countDown = setInterval(function() {
         clock.innerHTML = now;
         now -= 1;
         now = checkTime(now);
     }, 1000)
-
+    // check xem thời gian về 0 chưa
     function checkTime(now) {
         if (now < 0) {
             clock.innerHTML = "HẾT GIỜ !!!";
-            for (i = 0; i < number; i++) {
+            for (i = 0; i < lists.children.length; i++) {
                 lists.children[i].setAttribute("draggable", false);
             }
             clearInterval(countDown);
+            if (lists.children.length == 0) {
+                alert("you win!");
+                next.style.display = "block";
+            } else {
+                alert("you lose!");
+            }
         }
         return now;
     }
+    // cài đặt chức năng nút tiếp tục
+    next.addEventListener("click", function() {
+        while (board.hasChildNodes()) {
+            board.removeChild(board.firstChild);
+        }
+        GamePlay();
+    })
+
 }
 
 GamePlay();

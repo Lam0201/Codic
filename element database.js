@@ -77,71 +77,65 @@ let elementArr = [
     example: '<font face="Times New Roman">Example</font>',
     browser: '',
   },
-  // {
-  //   name: "<form>",
-  //   meaning: "Emphasis - In đậm và nhấn mạnh",
-  //   example: '<form action="/action_page.php">
-  //   <label for="fname">First name:</label><br>
-  //   <input type="text" id="fname" name="fname" value="John"><br>
-  //   <label for="lname">Last name:</label><br>
-  //   <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  //   <input type="submit" value="Submit">
-  //   </form>',
-  //   browser: '',
-  // },
-  // {
-  //   name: "<h1>
-  //   <h2>
-  //   <h3>
-  //   <h4>
-  //   <h5>
-  //   <h6>",
-  //   meaning: "Heading - Đầu mục",
-  //   example: "<h1>Heading 1 Example</h1>
-  //   <h2>Heading 2 Example</h2>
-  //   <h3>Heading 3 Example</h3>
-  //   <h4>Heading 4 Example</h4>
-  //   <h5>Heading 5 Example</h5>
-  //   <h6>Heading 6 Example</h6>",
-  //   browser: '',
-  // },
-  // {
-  //   name: "<head>",
-  //   meaning: "Heading of HTML documen t - Phần mở đầu của HTML",
-  //   example: "<head>Contains elements describing the document</head>",
-  //   browser: '',
-  // },
-  // {
-  //   name: "<hr/>",
-  //   meaning: "Horizontal rule - Kẻ ngang từ điểm bắt đầu đến điểm kết thúc",
-  //   example: "<hr/>",
-  //   browser: '',
-  // },
-  // {
-  //   name: "<html>",
-  //   meaning: "Hypertext markup language - Ngôn ngữ đánh dấu siêu văn bản",
-  //   example: "<html>
-  //   <head>
-  //   <meta>
-  //   <title>Title of your web page</title>
-  //   </head>
-  //   <body>HTML web page contents
-  //   </body>
-  //   </html>",
-  //   browser: '',
-  // },
-  // {
-  //   name: "<i>",
-  //   meaning: "Italic - In nghiêng",
-  //   example: "<i>Example</i>",
-  //   browser: '',
-  // },
-  // {
-  //   name: "<img>",
-  //   meaning: "Image - Chèn ảnh",
-  //   example: '<img src="Earth.gif" width="41" height="41" border="0" alt="text describing the image" />',
-  //   browser: '',
-  // },
+  {
+    id: "form-tag",
+    name: "<form>",
+    meaning: "Form - Biểu mẫu",
+    example: '<form action="/action_page.php"> \n<label for ="fname">First name:</label><br> \n<input type="text" id="fname" name="fname" value="John"><br> \n<label for="lname">Last name:</label><br> \n<input type="text" id="lname" name="lname" value="Doe"><br><br> \n<input type="submit" value="Submit"> \n</form>',
+    browser: '',
+  },
+  { id: "heading-tag",
+    name: "<h1>,<h2>,<h3>,<h4>,<h5>,<h6>",
+    meaning: "Heading - Đầu mục",
+    example: "<h1>Heading 1 Example</h1>\n<h2>Heading 2 Example</h2>\n<h3>Heading 3 Example</h3>\n<h4>Heading 4 Example</h4>\n<h5>Heading 5 Example</h5>\n<h6>Heading 6 Example</h6>",
+    browser: '',
+  },
+  { 
+    id: "head-tag",
+    name: "<head>",
+    meaning: "Heading of HTML document - Phần mở đầu của HTML",
+    example: "<head>Contains elements describing the document</head>",
+    browser: '',
+  },
+  { id: "horizontal-rule",
+    name: "<hr/>",
+    meaning: "Horizontal rule - Kẻ ngang từ điểm bắt đầu đến điểm kết thúc",
+    example: "<hr/>",
+    browser: '',
+  },
+  {
+    id: "hypertext-markup-language",
+    name: "<html>",
+    meaning: "Hypertext markup language - Ngôn ngữ đánh dấu siêu văn bản",
+    example: "<html>\n<head>\n<meta>\n<title>Title of your web page</title>\n</head>\n<body>HTML web page contents\n</body>\n</html>",
+    browser: '',
+  },
+  { id: "italic",
+    name: "<i>",
+    meaning: "Italic - In nghiêng",
+    example: "<i>Example</i>",
+    browser: '',
+  },
+  { id: "image",
+    name: "<img>",
+    meaning: "Image - Chèn ảnh",
+    example: '<img src="Earth.gif" width="41" height="41" border="0" alt="text describing the image" />',
+    browser: '',
+  },
+  {
+    id: "input",
+    name: "<input>",
+    meaning: "input field - ô nhập thông tin",
+    example: '<form method=post action="/cgibin/example.cgi">\n<input type="text" size="10"\nmaxlength="30">\n<input type="Submit" value="Submit">\n</form>',
+    browser: '',
+  },
+  { 
+  id: "list-item",
+  name: "<li>",
+  meaning: "list item - danh sách các thứ",
+  example: '<menu>\n<li type="disc">List item 1</li>\n<li type="circle">List item 2</li>\n<li type="square">List item 3</li>\n</MENU>',
+  browser: '',
+  },
 ]
 
 // xuất khẩu lao động object này

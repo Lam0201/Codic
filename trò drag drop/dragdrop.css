@@ -5,12 +5,13 @@ body {
 
 }
 
+/* danh sách chứa các thẻ từ tiếng anh để kéo */
 .Lists {
     display: flex;
     background-color: yellow;
     border: 1px solid black;
 }
-
+/* các thẻ từ tiếng anh cần kéo */
 .css {
     background-color: white;
     color: black;
@@ -18,7 +19,7 @@ body {
     margin: 5px;
 
 }
-
+/* chứa định nghĩa, các ô trống và đếm ngược thời gian */
 .definition {
     display: flex;
     justify-content: space-between;
@@ -26,18 +27,34 @@ body {
     background-color: yellow;
     border: 1px solid black;
 }
-
+/* định nghĩa của các thẻ từ tiếng anh được kéo */
 .meaning {
     padding: 5px;
 }
-
+/* đếm ngược thời gian */
 #time {
     align-items: center;
     font-size: 30px;
 }
-
+/* ô trống để thả từ tiếng anh được kéo vào */
 .blank {
     border: 1px solid black;
     padding-inline: 50px;
     background-color: white;
+}
+/* nút chuyển màn chơi tiếp theo */
+#nextStage {
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 50px;
+    background-color: whitesmoke;
+    color: rgb(5, 228, 228);
+    transition-duration: 0.4s;
+}
+#nextStage:hover {
+    background-color: aqua;
+    color: black;    
+}
+#nextStage:active {
+    transform: translateY(1.5px);
 }
