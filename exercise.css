@@ -59,7 +59,7 @@ html {
 
 /* Study element */
 .element-studying-container {
-    background-image: url(Asset/Background/bgr\ study\ element.jpg);
+    background-image: url(./Asset/Background/bgr\ study\ element.jpg);
     background-size: cover;
 }
 
@@ -112,7 +112,7 @@ html {
 
 /* Game */
 .game-container {
-    background-image: url(Asset/Background/practice\ bgr.jpg);
+    background-image: url(./Asset/Background/practice\ bgr.jpg);
     background-size: cover;
 }
 
