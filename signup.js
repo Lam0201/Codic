@@ -22,7 +22,7 @@ inputBtn.addEventListener("submit", (e) => {
             localUsers.push({ username: e.target.username.value, password: e.target.password.value })
             localStorage.users = JSON.stringify(localUsers)
             alert("tạo tài khoản thành công")
-            document.location.href = "/log in.html"
+            document.location.href = "./log in.html"
         })
     }
 })
