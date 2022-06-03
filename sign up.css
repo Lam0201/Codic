@@ -1,30 +1,30 @@
-body{
+body {
     height: 100vh;
 }
-.content{
-    background-image: url(Asset/Background/sign\ up\ bgr.jpg);
+
+.content {
+    background-image: url(./Asset/Background/sign\ up\ bgr.jpg);
     background-size: cover;
     /* height: 100%; */
     z-index: 0;
     position: relative;
 }
-<<<<<<< HEAD
-=======
-section{
-    
-}
+
+section {}
+
 #password-messenger {
-    color:  red;
+    color: red;
 }
->>>>>>> 14ea7df6c2d7eb9d8d1df9b8505c342a1d856db4
-.sign-up-img{
+
+.sign-up-img {
     position: absolute;
     left: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.form-container{
+
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,22 +42,26 @@ section{
     height: 90%;
     width: 60%;
 }
-.content > img{
+
+.content>img {
     width: 280px;
     border-radius: 18px;
     z-index: 1;
 }
-.top-img{
+
+.top-img {
     position: absolute;
     left: 150px;
     top: 10px;
 }
-.bottom-img{
+
+.bottom-img {
     position: absolute;
     bottom: 50px;
     right: 150px;
 }
-.form > h2{
+
+.form>h2 {
     color: #607d8b;
     font-weight: 500;
     font-size: 1.5em;
@@ -67,17 +71,19 @@ section{
     display: inline-block;
     letter-spacing: 1px;
 }
-.input-form{
+
+.input-form {
     margin-bottom: 20px;
 }
-.input-form > p{
+
+.input-form>p {
     font-size: 16px;
     margin-bottom: 5px;
     color: #607db8;
     letter-spacing: 1px;
 }
 
-.input-form > input{
+.input-form>input {
     width: 100%;
     padding: 10px 20px;
     outline: none;
@@ -88,25 +94,27 @@ section{
     background: transparent;
     border-radius: 30px;
 }
-.input-form > input[type="submit"]{
+
+.input-form>input[type="submit"] {
     background: rgb(255, 121, 44);
     color: black;
     outline: none;
     border: none;
     font-weight: 500;
     cursor: pointer;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-              0 2px 2px rgba(0,0,0,0.12), 
-              0 4px 4px rgba(0,0,0,0.12), 
-              0 8px 8px rgba(0,0,0,0.12),
-              0 16px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+        0 2px 2px rgba(0, 0, 0, 0.12),
+        0 4px 4px rgba(0, 0, 0, 0.12),
+        0 8px 8px rgba(0, 0, 0, 0.12),
+        0 16px 16px rgba(0, 0, 0, 0.12);
 }
-.input-form > input[type="submit"]:hover{
+
+.input-form>input[type="submit"]:hover {
     background: orangered;
     color: white;
 }
-.remember-info{
-    : ;
+
+.remember-info {
     margin-bottom: 10px;
     color: #607d8b;
     font-size: 14px;

@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="codic.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./codic.css">
+    <link rel="stylesheet" href="./contact.css">
 </head>
 
 <body>
     <!-- TASK BAR -->
     <div class="navi-bar">
         <div class="logo">
-            <a href="/Asset/index.html">
-                <img class="logo-image" src="/Asset/Icon/codic.png" alt="Từ điển lập trình">
+            <a href="./index.html">
+                <img class="logo-image" src="./Asset/Icon/codic.png" alt="Từ điển lập trình">
                 Codic
             </a>
         </div>
         <div class="menu">
-            <div class="menu-item"><a href="index.html">Trang chủ</a></div>
-            <div class="menu-item"><a href="introduction.html">Giới thiệu</a></div>
-            <div class="menu-item"><a href="exercise.html">Học tập</a></div>
-            <div class="menu-item"><a href="contact.html">Liên hệ</a></div>
-            <div class="menu-item"><a href="log in.html">Đăng nhập</a></div>
-            <div class="menu-item"><a href="sign up.html">Đăng ký</a></div>
+            <div class="menu-item"><a href="./index.html">Trang chủ</a></div>
+            <div class="menu-item"><a href="./introduction.html">Giới thiệu</a></div>
+            <div class="menu-item"><a href="./exercise.html">Học tập</a></div>
+            <div class="menu-item"><a href="./contact.html">Liên hệ</a></div>
+            <div class="menu-item"><a href="./log in.html">Đăng nhập</a></div>
+            <div class="menu-item"><a href="./sign up.html">Đăng ký</a></div>
         </div>
     </div>
 
@@ -35,11 +37,11 @@
         <div class="contact-content">
             <div class="direct-contact">
                 <h2>Nhắn tin trực tiếp</h2>
-                <form class="enter-feedback">
+                <form id="contact" class="enter-feedback">
                     <label for="email">Email của bạn:</label><br>
-                    <input type="email" name="email" placeholder="SamSmith@gmail.com"><br>
+                    <input type="email" name="email" id="email" placeholder="SamSmith@gmail.com"><br>
                     <label for="feedback">Lời nhắn:</label><br>
-                    <input type="text" name="feedback" placeholder="Nhập tin nhắn"><br>
+                    <input type="text" name="feedBack" id="feedBack" placeholder="Nhập tin nhắn"><br>
                     <input type="submit" value="Gửi">
                 </form>
             </div>
@@ -76,4 +78,5 @@
     <script>
         AOS.init();
     </script>
+    <script src="./contact.js"></script>
 </body>

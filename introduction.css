@@ -1,6 +1,6 @@
 /* BACKGROUND 1 - COMPANY INTRODUCTION */
 .company-info {
-    background-image: url(Asset/Background/intro\ bgr1.jpg);
+    background-image: url(./Asset/Background/intro\ bgr1.jpg);
     background-size: cover;
 }
 
@@ -52,7 +52,7 @@
 
 /* BACKGROUND 2 - COMPANY HISTORY */
 .company-history {
-    background-image: url(Asset/Background/intro\ bgr2.jpg);
+    background-image: url(./Asset/Background/intro\ bgr2.jpg);
     background-size: cover;
 }
 
@@ -99,7 +99,7 @@
 
 /* BACKGROUND 3 - GOAL */
 .goal {
-    background-image: url(Asset/Background/intro\ bgr3.jpg);
+    background-image: url(./Asset/Background/intro\ bgr3.jpg);
     background-size: cover;
 }
 
@@ -156,6 +156,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 18px;
 }
-.z-index{
+
+.z-index {
     z-index: 2;
 }

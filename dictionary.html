@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">  
-    <title>Từ điển</title>
-    <link rel="stylesheet" href="dictionary.css">
-    <link rel="stylesheet" href="codic.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CDN Link for Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  </head>
-  <body>
-     <!-- TASK BAR -->
-     <div class="navi-bar">
-      <div class="logo">
-          <a href="/Asset/index.html">
-              <img class="logo-image" src="/Asset/Icon/codic.png" alt="Từ điển lập trình">
-              Codic
-          </a>
-      </div>
-      <div class="menu">
-          <div class="menu-item"><a href="index.html">Trang chủ</a></div>
-          <div class="menu-item"><a href="introduction.html">Giới thiệu</a></div>
-          <div class="menu-item"><a href="exercise.html">Học tập</a></div>
-          <div class="menu-item"><a href="contact.html">Liên hệ</a></div>
-          <div class="menu-item"><a href="log in.html">Đăng nhập</a></div>
-          <div class="menu-item"><a href="sign up.html">Đăng ký</a></div>
-      </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Từ điển</title>
+  <link rel="stylesheet" href="./dictionary.css">
+  <link rel="stylesheet" href="./codic.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CDN Link for Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- TASK BAR -->
+  <div class="navi-bar">
+    <div class="logo">
+      <a href="./index.html">
+        <img class="logo-image" src="./Asset/Icon/codic.png" alt="Từ điển lập trình">
+        Codic
+      </a>
+    </div>
+    <div class="menu">
+      <div class="menu-item"><a href="./index.html">Trang chủ</a></div>
+      <div class="menu-item"><a href="./introduction.html">Giới thiệu</a></div>
+      <div class="menu-item"><a href="./exercise.html">Học tập</a></div>
+      <div class="menu-item"><a href="./contact.html">Liên hệ</a></div>
+      <div class="menu-item"><a href="./log in.html">Đăng nhập</a></div>
+      <div class="menu-item"><a href="./sign up.html">Đăng ký</a></div>
+    </div>
   </div>
 
-    <!-- DICTIONARY -->
-    <div class="dictionary">
-      <div class="wrapper">
-        <header class="heading1">Từ điển Tiếng Anh</header>
-        <div class="search">
-          <input type="text" placeholder="Tìm kiếm từ" required spellcheck="false">
-          <i class="fas fa-search"></i>
-          <span class="material-icons">close</span>
-        </div>
-        <p class="info-text">Nhập từ và ấn enter xem nghĩa, ví dụ, từ đồng nghĩa,...</p>
-        <ul>
-          <li class="word">
-            <div class="details">
-              <p>__</p>
-              <span>_ _</span>
-            </div>
-            <i class="fas fa-volume-up"></i>
-          </li>
-          <div class="content">
-            <li class="meaning">
-              <div class="details">
-                <p>Ý nghĩa</p>
-                <span>___</span>
-              </div>
-            </li>
-            <li class="example">
-              <div class="details">
-                <p>Ví dụ</p>
-                <span>___</span>
-              </div>
-            </li>
-            <li class="synonyms">
-              <div class="details">
-                <p>Đồng nghĩa</p>
-                <div class="list"></div>
-              </div>
-            </li>
-          </div>
-        </ul>
+  <!-- DICTIONARY -->
+  <div class="dictionary">
+    <div class="wrapper">
+      <header class="heading1">Từ điển Tiếng Anh</header>
+      <div class="search">
+        <input type="text" placeholder="Tìm kiếm từ" required spellcheck="false">
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
       </div>
+      <p class="info-text">Nhập từ và ấn enter xem nghĩa, ví dụ, từ đồng nghĩa,...</p>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p>__</p>
+            <span>_ _</span>
+          </div>
+          <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+          <li class="meaning">
+            <div class="details">
+              <p>Ý nghĩa</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="example">
+            <div class="details">
+              <p>Ví dụ</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="synonyms">
+            <div class="details">
+              <p>Đồng nghĩa</p>
+              <div class="list"></div>
+            </div>
+          </li>
+        </div>
+      </ul>
     </div>
+  </div>
 
-    <script src="dictionary.js"></script>
+  <script src="./dictionary.js"></script>
 
-  </body>
+</body>
+
 </html>

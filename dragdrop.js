@@ -146,17 +146,17 @@ function countDownClock() {
     // gọi id nút tiếp tục
     let next = document.getElementById("nextStage");
     // ẩn display nút tiếp tục
-    next.style.display = "none"; 
+    next.style.display = "none";
     // gọi id nút chơi lại
     let retry = document.getElementById("retry");
     // ẩn display nút chơi lại
-    retry.style.display = "none"; 
+    retry.style.display = "none";
     // gọi id thời gian
     let clock = document.getElementById("time");
     // đặt thời gian làm bài 
     let now = new Date().setTime(dragTime);
     // đếm ngược thời gian về 0
-    let countDown = setInterval(function() {
+    let countDown = setInterval(function () {
         clock.innerHTML = now;
         now -= 1;
         now = checkTime(now);
@@ -185,7 +185,7 @@ function countDownClock() {
     retry.onclick = retryGame;
 
 }
-function nextLevel () {
+function nextLevel() {
     while (board.hasChildNodes()) {
         board.removeChild(board.firstChild);
     }

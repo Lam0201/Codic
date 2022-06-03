@@ -18,31 +18,31 @@ function allHTMLTag () {
     elementContent.className = "element-item-content";
     elementContent.setAttribute("id", elementArr[a].id);
     // tạo các nội dung
-      // thẻ meaning
-      let tagMeaning = document.createElement("h4");
-      tagMeaning.className = "tag-meaning";
-      tagMeaning.innerText = "Ý nghĩa";
-      let tagMeaningContent = document.createElement("p");
-      tagMeaningContent.className = "meaning";
-      tagMeaningContent.innerText = elementArr[a].meaning;
-      // thẻ example
-      let tagExample = document.createElement("h4");
-      tagExample.className = "tag-example";
-      tagExample.innerText = "Ví dụ";
-      let tagExampleContent = document.createElement("p");
-      tagExampleContent.className = "example";
-      tagExampleContent.innerText = elementArr[a].example;
-      // thẻ browser
-      let tagBrowser = document.createElement("h4");
-      tagBrowser.className = "tag-browser";
-      tagBrowser.innerText = "Trình duyệt";
-      let tagBrowserContent = document.createElement("p");
-      tagBrowserContent.className = "browser";
-      tagBrowserContent.innerHTML = elementArr[a].example;
-      // một vài thẻ tag sẽ ko hiển thị trên trình duyệt nên ta sẽ xét chúng qua object ahihi =)))))
-      if (elementArr[a].ahihi == "hidden") {
+    // thẻ meaning
+    let tagMeaning = document.createElement("h4");
+    tagMeaning.className = "tag-meaning";
+    tagMeaning.innerText = "Ý nghĩa";
+    let tagMeaningContent = document.createElement("p");
+    tagMeaningContent.className = "meaning";
+    tagMeaningContent.innerText = elementArr[a].meaning;
+    // thẻ example
+    let tagExample = document.createElement("h4");
+    tagExample.className = "tag-example";
+    tagExample.innerText = "Ví dụ";
+    let tagExampleContent = document.createElement("p");
+    tagExampleContent.className = "example";
+    tagExampleContent.innerText = elementArr[a].example;
+    // thẻ browser
+    let tagBrowser = document.createElement("h4");
+    tagBrowser.className = "tag-browser";
+    tagBrowser.innerText = "Trình duyệt";
+    let tagBrowserContent = document.createElement("p");
+    tagBrowserContent.className = "browser";
+    tagBrowserContent.innerHTML = elementArr[a].example;
+    // một vài thẻ tag sẽ ko hiển thị trên trình duyệt nên ta sẽ xét chúng qua object ahihi =)))))
+    if (elementArr[a].ahihi == "hidden") {
       tagBrowserContent.innerHTML = "Nothing will be shown";
-      }  
+    }
     // gán các thẻ tùm lum ở trên vào html
     htmlElement[0].appendChild(elementContainer);
     elementContainer.appendChild(elementItem);
