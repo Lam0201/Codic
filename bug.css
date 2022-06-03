@@ -1,11 +1,12 @@
 body {
     background-image: url(/Asset/Background/bug\ bgr.jpg);
     background-size: cover;
+}
+.gameContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #codeScreen {
     display: flex;
     flex-direction: column;

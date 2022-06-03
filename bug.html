@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="bug.css">
     <link rel="stylesheet" href="codic.css">
     
-    
 </head>
 
 <body>
@@ -33,28 +32,30 @@
     </div>
 
     <!-- GAME -->
-    <h1 class="heading">DA GAME: THIS BUG IS ON FIREEEEEEE</h1>
-    <p class="text22"> Trong lúc code, chắc chắn các bạn sẽ gặp những chú bọ rất "đáng yêu".
-        <br />CHÚNG PHÁ CHƯƠNG TRÌNH CỦA BẠN. HÃY NÉM CHÚNG VÀO LỬA NÀOOOOOO!!!
-    </p>
-    <div id="gameScreen">
-        <div id="gameArea" style="border:1px solid rgba(0, 0, 0, 0.658)">
-            <div id="bug">
-                <i style="color: rgb(252, 61, 61); font-size: calc(25px + 3vw);" class="fa-solid fa-bug"></i>
+    <div class="gameContainer">
+        <h1 class="heading">DA GAME: THIS BUG IS ON FIREEEEEEE</h1>
+        <p class="text22"> Trong lúc code, chắc chắn các bạn sẽ gặp những chú bọ rất "đáng yêu".
+            <br />CHÚNG PHÁ CHƯƠNG TRÌNH CỦA BẠN. HÃY NÉM CHÚNG VÀO LỬA NÀOOOOOO!!!
+        </p>
+        <div id="gameScreen">
+            <div id="gameArea" style="border:1px solid rgba(0, 0, 0, 0.658)">
+                <div id="bug">
+                    <i style="color: rgb(252, 61, 61); font-size: calc(25px + 3vw);" class="fa-solid fa-bug"></i>
+                </div>
+            </div>
+            <div id="gameArea2" style="border:1px solid rgba(0, 0, 0, 0.678)">
+                <div id="fire">
+                    <!-- <i style="color: red; font-size: calc(55px + 3vw)" class="fa-solid fa-fire"></i> -->
+                    <i style="color: red; font-size: calc(55px + 3vw)" class="fa-solid fa-fire-flame-curved"></i>
+                </div>
             </div>
         </div>
-        <div id="gameArea2" style="border:1px solid rgba(0, 0, 0, 0.678)">
-            <div id="fire">
-                <!-- <i style="color: red; font-size: calc(55px + 3vw)" class="fa-solid fa-fire"></i> -->
-                <i style="color: red; font-size: calc(55px + 3vw)" class="fa-solid fa-fire-flame-curved"></i>
-            </div>
+        <div id="codeScreen">
+            <p id="task" class="text22"></p>
+            <textarea id="userCode" rows="5" cols="60"></textarea>
+            <br/>
+            <button type="button" id="nextStage">Continue</button>
         </div>
-    </div>
-    <div id="codeScreen">
-        <p id="task" class="text22"></p>
-        <textarea id="userCode" rows="5" cols="60"></textarea>
-        <br/>
-        <button type="button" id="nextStage">Continue</button>
     </div>
     <script src='bug.js'></script>
     <script src="https://kit.fontawesome.com/7f093e4826.js" crossorigin="anonymous"></script>

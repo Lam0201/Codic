@@ -2,7 +2,7 @@ body {
     height: 100vh;
     width: 100%;
     text-align: justify;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /* Căn giữa */
 .center{
@@ -17,6 +17,7 @@ body {
 }
 /* CSS khu vực chơi */
 .game-area{
+    margin: 0 20px 0 20px;
     padding-top: 50px;
     display: grid;
     grid-template-columns: 50% 50%;
