@@ -1,0 +1,107 @@
+body {
+    background-image: url(/Asset/Background/bug\ bgr.jpg);
+    background-size: cover;
+}
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#codeScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+#userCode{
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#gameScreen {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 70vh;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#gameArea {
+    position: absolute;
+    z-index: 1;
+    width: 40vw;
+    height: 40vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 70vh;
+    max-height: 70vh;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+#gameArea2 {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.616);
+    width: 40vw;
+    width: 40vw;
+    height: 40vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 70vh;
+    max-height: 70vh;
+    border-radius: 8px;
+}
+
+#nextStage {
+    margin: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 30px;
+    background-color: #B7E5DD;
+    border-color: rgba(0, 0, 0, 0.603);
+    color: black;
+    transition-duration: 0.4s;
+    padding: 5px 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+            0 2px 2px rgba(0,0,0,0.12), 
+            0 4px 4px rgba(0,0,0,0.12), 
+            0 8px 8px rgba(0,0,0,0.12),
+            0 16px 16px rgba(0,0,0,0.12);
+}
+#nextStage:hover {
+    background-color: #F4BFBF;
+    color: black; 
+    transform: translateY(8px);
+    transition: ease-out;
+    transition-duration: 0.3s;   
+}
+#nextStage:active {
+    transform: translateY(1.5px);
+}
+
+#bug { 
+    margin: 10px;
+    height: calc(40vw - 15px);
+    min-height: calc(300px - 15px);
+    max-height: calc(80vh - 15px);
+}
+
+#fire {
+    height: calc(40vw);
+    min-height: calc(300px);
+    max-height: calc(80vh);
+}
+.text22{
+    font-size: 22px;
+    text-align: center;
+}
+.heading{
+    font-size: 40px;
+    padding: 20px;
+}

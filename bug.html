@@ -6,88 +6,10 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Trò chơi diệt Bug</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='index.css'> -->
+    <link rel="stylesheet" href="bug.css">
     <link rel="stylesheet" href="codic.css">
-    <style>
-        body {
-            background-image: linear-gradient(45deg, pink, orange);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #codeScreen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-radius: 12px;
-        }
-
-        #gameScreen {
-            position: relative;
-            width: 40vw;
-            height: 40vw;
-            min-width: 300px;
-            min-height: 300px;
-            max-width: 80vh;
-            max-height: 80vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        #gameArea {
-            position: absolute;
-            z-index: 1;
-            width: 40vw;
-            height: 40vw;
-            min-width: 300px;
-            min-height: 300px;
-            max-width: 80vh;
-            max-height: 80vh;
-        }
-
-        #gameArea2 {
-            position: absolute;
-            background-color: rgb(63, 121, 141);
-            width: 40vw;
-            width: 40vw;
-            height: 40vw;
-            min-width: 300px;
-            min-height: 300px;
-            max-width: 80vh;
-            max-height: 80vh;
-        }
-
-        #nextStage {
-            border-radius: 5px;
-            margin: 10px;
-            font-size: 50px;
-            background-color: whitesmoke;
-            color: rgb(5, 228, 228);
-            transition-duration: 0.4s;
-        }
-        #nextStage:hover {
-            background-color: aqua;
-            color: black;    
-        }
-        #nextStage:active {
-            transform: translateY(1.5px);
-        }
-
-        #bug { 
-            margin: 10px;
-            height: calc(40vw - 15px);
-            min-height: calc(300px - 15px);
-            max-height: calc(80vh - 15px);
-        }
-
-        #fire {
-            height: calc(40vw);
-            min-height: calc(300px);
-            max-height: calc(80vh);
-        }
-    </style>
-    <script src="https://kit.fontawesome.com/7f093e4826.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -102,14 +24,7 @@
         <div class="menu">
             <div class="menu-item"><a href="codic.html">Trang chủ</a></div>
             <div class="menu-item"><a href="introduction.html">Giới thiệu</a></div>
-            <div class="menu-item dropdown">
-                <a href="exercise.html">Học tập</a>
-                <div class="dropdown-content">
-                    <a href="dictionary.html">Từ điển</a>
-                    <a href="element.html">Các loại thẻ</a>
-                    <a href="exercise.html">Bài tập</a>
-                </div>
-            </div>
+            <div class="menu-item"><a href="exercise.html">Học tập</a></div>
             <div class="menu-item"><a href="contact.html">Liên hệ</a></div>
             <div class="menu-item"><a href="log in.html">Đăng nhập</a></div>
             <div class="menu-item"><a href="sign up.html">Đăng ký</a></div>
@@ -117,37 +32,33 @@
     </div>
 
     <!-- GAME -->
-    <p style="font-size: 20px; color:black">DA GAME: THIS BUG IS ON FIREEEEEEE</p>
-        <p> Trong lúc code, chắc chắn các bạn sẽ gặp những chú bọ rất "đáng yêu".
-            <br /> CHÚNG PHÁ CHƯƠNG TRÌNH CỦA BẠN.
-            <br /> CHÚNG THẬT LÀ KHỐN LẠN.
-            <br /> HÃY NÉM CHÚNG VÀO LỬA NÀOOOOOO !!!
+    <div class="gameContainer">
+        <h1 class="heading">DA GAME: THIS BUG IS ON FIREEEEEEE</h1>
+        <p class="text22"> Trong lúc code, chắc chắn các bạn sẽ gặp những chú bọ rất "đáng yêu".
+            <br />CHÚNG PHÁ CHƯƠNG TRÌNH CỦA BẠN. HÃY NÉM CHÚNG VÀO LỬA NÀOOOOOO!!!
         </p>
-    <div id="gameScreen">
-        <div id="gameArea" style="border:1px solid black">
-            <div id="bug">
-                <i style="color: lightcoral; font-size: calc(25px + 3vw);" class="fa-solid fa-bug"></i>
+        <div id="gameScreen">
+            <div id="gameArea" style="border:1px solid rgba(0, 0, 0, 0.658)">
+                <div id="bug">
+                    <i style="color: rgb(252, 61, 61); font-size: calc(25px + 3vw);" class="fa-solid fa-bug"></i>
+                </div>
+            </div>
+            <div id="gameArea2" style="border:1px solid rgba(0, 0, 0, 0.678)">
+                <div id="fire">
+                    <!-- <i style="color: red; font-size: calc(55px + 3vw)" class="fa-solid fa-fire"></i> -->
+                    <i style="color: red; font-size: calc(55px + 3vw)" class="fa-solid fa-fire-flame-curved"></i>
+                </div>
             </div>
         </div>
-        <div id="gameArea2" style="border:1px solid black">
-            <div id="fire">
-                <i style="color: red; font-size: calc(55px + 3vw)" class="fa-solid fa-fire"></i>
-            </div>
+        <div id="codeScreen">
+            <p id="task" class="text22"></p>
+            <textarea id="userCode" rows="5" cols="60"></textarea>
+            <br/>
+            <button type="button" id="nextStage">Continue</button>
         </div>
-
     </div>
-    <div id="codeScreen">
-        <p id="task"></p>
-        <textarea id="userCode" rows="5" cols="60"></textarea>
-        <br />
-        <button type="button" id="nextStage">continue</button>
-    </div>
-
-
-
-
-
     <script src='bug.js'></script>
+    <script src="https://kit.fontawesome.com/7f093e4826.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
