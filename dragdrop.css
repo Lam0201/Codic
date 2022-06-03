@@ -2,7 +2,7 @@ body {
     height: 100vh;
     width: 100%;
     text-align: justify;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 /* Căn giữa */
 .center{
@@ -24,7 +24,9 @@ body {
 }
 /* danh sách chứa các thẻ từ tiếng anh để kéo */
 .Lists {
+    /* overflow: hidden; */
     display: flex;
+    flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.733);
     border-radius: 12px;
     padding: 20px;
@@ -42,6 +44,7 @@ body {
 }
 /* chứa định nghĩa, các ô trống và đếm ngược thời gian */
 .definition {
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.734);

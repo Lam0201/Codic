@@ -142,6 +142,7 @@ function dragNdrop() {
     }
 }
 function countDownClock() {
+    console.log(number);
     // gọi id nút tiếp tục
     let next = document.getElementById("nextStage");
     // ẩn display nút tiếp tục
@@ -179,33 +180,36 @@ function countDownClock() {
         return now;
     }
     // cài đặt chức năng nút tiếp tục
-    next.addEventListener("click", function() {
-        while (board.hasChildNodes()) {
-            board.removeChild(board.firstChild);
-        }
-        if (number < listArrText.length) {
-            number++;
-            dragTime += 2;
-        } else {
-            alert("bạn đã chơi hết các cấp độ rồi ! bạn khủng khiếp đấy");
-        }
-
-        GamePlay();
-    })
+    next.onclick = nextLevel;
     // cài đặt chức năng nút chơi lại
-    retry.addEventListener("click", function() {
-        while (board.hasChildNodes()) {
-            board.removeChild(board.firstChild);
-        }
-        while (lists.hasChildNodes()) {
-            lists.removeChild(lists.firstChild);
-        }
-        number = 4;
-        dragTime = 10;
-        GamePlay();
-    })
+    retry.onclick = retryGame;
 
 }
+function nextLevel () {
+    while (board.hasChildNodes()) {
+        board.removeChild(board.firstChild);
+    }
+    if (number < listArrText.length) {
+        number++;
+        dragTime += 2;
+    } else {
+        alert("bạn đã chơi hết các cấp độ rồi ! bạn khủng khiếp đấy");
+    }
+
+    GamePlay();
+}
+function retryGame() {
+    while (board.hasChildNodes()) {
+        board.removeChild(board.firstChild);
+    }
+    while (lists.hasChildNodes()) {
+        lists.removeChild(lists.firstChild);
+    }
+    number = 4;
+    dragTime = 10;
+    GamePlay();
+}
+
 
 GamePlay();
 
