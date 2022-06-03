@@ -1,4 +1,4 @@
-//Mảng dữ liệu thẻ
+//Mảng dữ liệu thẻ html
 let elementArr = [
   {
     id: "comment",
@@ -239,6 +239,221 @@ let elementArr = [
     browser: '',
   },
 ]
-
 // xuất khẩu lao động object này
 export {elementArr};
+
+// mảng dữ liệu thẻ css
+let cssArr = [
+  {
+    id: "align-items",
+    meaning: "",
+    definition: "Căn chỉnh các thẻ con trong flexbox",
+    example: "div {display: flex;align-items: center;}"
+  },
+  {
+    id: "align-self",
+    meaning: "",
+    definition: "Căn chỉnh các thẻ con được chọn trong flexbox",
+    example: "#myBlueDiv {\nalign-self: center;\n}"
+  },
+  {
+    id: "background-color",
+    meaning: "màu nền",
+    definition: "Specifies the background color of an element",
+    example: "body {\nbackground-color: coral;\n}"
+  },
+  {
+    id: "background-image",
+    meaning: "ảnh nền",
+    definition: "Specifies one or more background images for an element",
+    example: "body {\nbackground-image: linear-gradient(45deg, red, green);\n}",
+  },
+  {
+    id: "border",
+    meaning: "viền",
+    definition: "A shorthand property for border-width, border-style and border-color",
+    example: "h1 {\nborder: 5px solid red;\n}",
+  },
+  {
+    id: "box-sizing",
+    meaning: "",
+    definition: "Defines how the width and height of an element are calculated: should they include padding and borders, or not",
+    example: "#example1 {\nbox-sizing: border-box;\n}",
+  },
+  {
+    id: "color",
+    meaning: "",
+    definition: "Sets the color of text",
+    example: "body {color: red;}",
+  },
+  {
+    id: "column-width",
+    meaning: "",
+    definition: "Specifies the column width",
+    example: "div {\ncolumn-width: 100px;\n}",
+  },
+  {
+    id: "display",
+    meaning: "hiển thị",
+    definition: "Specifies how a certain HTML element should be displayed",
+    example: "p.ex2 {display: inline;}",
+  },
+  {
+    id: "flex-direction",
+    meaning: "",
+    definition: "Specifies the direction of the flexible items",
+    example: "div {\ndisplay: flex;\nflex-direction: row-reverse;\n}",
+  },
+  {
+    id: "column-width",
+    meaning: "",
+    definition: "Specifies the column width",
+    example: "div {\ncolumn-width: 100px;\n}",
+  },
+  {
+    id: "flex-wrap",
+    meaning: "",
+    definition: "Specifies whether the flexible items should wrap or not",
+    example: "div {\ndisplay: flex;  \nflex-wrap: wrap;\n}",
+  },
+  {
+    id: "font-family",
+    meaning: "phông chữ",
+    definition: "Specifies whether the flexible items should wrap or not",
+    example: "div {\ndisplay: flex;  \nflex-wrap: wrap;\n}",
+  },
+  {
+    id: "font-size",
+    meaning: "cỡ chữ",
+    definition: "Specifies the font size of text",
+    example: "div {\nfont-size: 15px;\n}",
+  },
+  {
+    id: "font-weight",
+    meaning: "độ dày chữ",
+    definition: "Specifies the weight of a font",
+    example: "div {\nfont-weight: bold;\n}",
+  },
+  {
+    id: "grid",
+    meaning: "",
+    definition: "A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties",
+    example: ".grid-container {\ndisplay: grid;\ngrid: 150px / auto auto auto;\n}",
+  },
+  {
+    id: "grid-template-columns",
+    meaning: "",
+    definition: "Specifies the size of the columns, and how many columns in a grid layout",
+    example: ".grid-container {\ndisplay: grid;\ngrid-template-columns: auto auto auto auto;\n}",
+  },
+  {
+    id: "grid-template-rows",
+    meaning: "",
+    definition: "Specifies the size of the rows in a grid layout",
+    example: ".grid-container {\ndisplay: grid;\ngrid-template-rows: 100px 300px;\n}",
+  },
+  {
+    id: "height",
+    meaning: "chiều cao",
+    definition: "Sets the height of an element",
+    example: "div.a {\nheight: auto;\nborder: 1px solid black;\n}",
+  },
+  {
+    id: "justify-content",
+    meaning: "xếp hàng ngang nội dung",
+    definition: "Specifies the alignment between the items inside a flexible container when the items do not use all available space",
+    example: "div {\ndisplay: flex;\njustify-content: center;\n}",
+  },
+  {
+    id: "margin",
+    meaning: "khoảng trống ngoài viền",
+    definition: "Sets all the margin properties in one declaration",
+    example: "p {\nmargin: 35px;\n}",
+  },
+  {
+    id: "max-width",
+    meaning: "chiều rộng tối đa",
+    definition: "Sets the maximum width of an element",
+    example: "p.ex1 {\nmax-width: 150px;\n}",
+  },
+  {
+    id: "min-width",
+    meaning: "chiều rộng tối thiểu",
+    definition: "Sets the minimum width of an element",
+    example: "p.ex1 {\nmax-width: 500px;\n}",
+  },
+  {
+    id: "max-height",
+    meaning: "chiều cao tối đa",
+    definition: "Sets the maximum height of an element",
+    example: "p.ex1 {\nmax-height: 50px;\n}",
+  },
+  {
+    id: "min-height",
+    meaning: "chiều cao tối thiểu",
+    definition: "Sets the minimum height of an element",
+    example: "p.ex1 {\nmin-height: 100px;\n}",
+  },
+  {
+    id: "order",
+    meaning: "thứ tự",
+    definition: "Căn chỉnh vị trí một thẻ con, so với những thẻ còn lại",
+    example: "div#myRedDIV {order: 2;}",
+  },
+  {
+    id: "overflow",
+    meaning: "tràn",
+    definition: "Specifies what happens if content overflows an element's box",
+    example: "div.ex1 {\noverflow: scroll;\n}",
+  },
+  {
+    id: "overflow-x",
+    meaning: "tràn theo trục x",
+    definition: "Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area",
+    example: "div.ex1 {\noverflow-x: hidden;\n}",
+  },
+  {
+    id: "overflow-y",
+    meaning: "tràn theo trục y",
+    definition: "Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area",
+    example: "div.ex1 {\noverflow-x: hidden;\n}",
+  },
+  {
+    id: "padding",
+    meaning: "đệm",
+    definition: "A shorthand property for all the padding-* properties",
+    example: "p {\npadding: 35px;\n}",
+  },
+  {
+    id: "position",
+    meaning: "vị trí",
+    definition: "Specifies the type of positioning method used for an element (static, relative, absolute or fixed)",
+    example: "h2 {\nposition: absolute;\nleft: 100px;\ntop: 150px;\n}",
+  },
+  {
+    id: "text-align",
+    meaning: "căn chỉnh văn bản",
+    definition: "căn chỉnh chiều ngang của văn bản",
+    example: "h2 {\nposition: absolute;\nleft: 100px;\ntop: 150px;\n}",
+  },
+  {
+    id: "transition",
+    meaning: "",
+    definition: "A shorthand property for all the transition-* properties",
+    example: "div {\nwidth: 100px;\ntransition: width 2s;\n}\ndiv:hover {\nwidth: 300px;\n}",
+  },
+  {
+    id: "width",
+    meaning: "chiều rộng",
+    definition: "Sets the width of an element",
+    example: "div.b {\nwidth: 150px;\nborder: 1px solid black;\n}",
+  },
+  {
+    id: "z-index",
+    meaning: "trục z",
+    definition: "Sets the stack order of a positioned element",
+    example: "img {\nposition: absolute;\nleft: 0px;\ntop: 0px;\nz-index: -1;\n}",
+  },
+]
+
+export {cssArr};
