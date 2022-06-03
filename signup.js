@@ -21,6 +21,7 @@ inputBtn.addEventListener("submit", (e) => {
             let localUsers = JSON.parse(localStorage.users)
             localUsers.push({ username: e.target.username.value, password: e.target.password.value })
             localStorage.users = JSON.stringify(localUsers)
+            alert("tạo tài khoản thành công")
             document.location.href = "/log in.html"
         })
     }
