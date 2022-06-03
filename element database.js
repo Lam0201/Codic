@@ -85,20 +85,22 @@ let elementArr = [
     example: '<form action="/action_page.php"> \n<label for ="fname">First name:</label><br> \n<input type="text" id="fname" name="fname" value="John"><br> \n<label for="lname">Last name:</label><br> \n<input type="text" id="lname" name="lname" value="Doe"><br><br> \n<input type="submit" value="Submit"> \n</form>',
     browser: '',
   },
-  { id: "heading-tag",
+  {
+    id: "heading-tag",
     name: "<h1> => <h6>",
     meaning: "Heading - Đầu mục",
     example: "<h1>Heading 1 Example</h1>\n<h2>Heading 2 Example</h2>\n<h3>Heading 3 Example</h3>\n<h4>Heading 4 Example</h4>\n<h5>Heading 5 Example</h5>\n<h6>Heading 6 Example</h6>",
     browser: '',
   },
-  { 
+  {
     id: "head-tag",
     name: "<head>",
     meaning: "Heading of HTML document - Phần mở đầu của HTML",
     example: "<head>Contains elements describing the document</head>",
     browser: '',
   },
-  { id: "horizontal-rule",
+  {
+    id: "horizontal-rule",
     name: "<hr/>",
     meaning: "Horizontal rule - Kẻ ngang từ điểm bắt đầu đến điểm kết thúc",
     example: "<hr/>",
@@ -111,13 +113,15 @@ let elementArr = [
     example: "<html>\n<head>\n<meta>\n<title>Title of your web page</title>\n</head>\n<body>HTML web page contents\n</body>\n</html>",
     browser: '',
   },
-  { id: "italic",
+  {
+    id: "italic",
     name: "<i>",
     meaning: "Italic - In nghiêng",
     example: "<i>Example</i>",
     browser: '',
   },
-  { id: "image",
+  {
+    id: "image",
     name: "<img>",
     meaning: "Image - Chèn ảnh",
     example: '<img src="Earth.gif" width="41" height="41" border="0" alt="text describing the image" />',
@@ -130,14 +134,14 @@ let elementArr = [
     example: '<form method=post action="/cgibin/example.cgi">\n<input type="text" size="10"\nmaxlength="30">\n<input type="Submit" value="Submit">\n</form>',
     browser: '',
   },
-  { 
-  id: "list-item",
-  name: "<li>",
-  meaning: "List item - Danh sách liệt kê",
-  example: '<menu>\n<li type="disc">List item 1</li>\n<li type="circle">List item 2</li>\n<li type="square">List item 3</li>\n</MENU>',
-  browser: '',
+  {
+    id: "list-item",
+    name: "<li>",
+    meaning: "List item - Danh sách liệt kê",
+    example: '<menu>\n<li type="disc">List item 1</li>\n<li type="circle">List item 2</li>\n<li type="square">List item 3</li>\n</MENU>',
+    browser: '',
   },
-  { 
+  {
     id: "link",
     name: "<link>",
     meaning: "Link - đường dẫn",
@@ -145,14 +149,14 @@ let elementArr = [
     browser: '',
     ahihi: "hidden",
   },
-  { 
+  {
     id: "menu",
     name: "<menu>",
     meaning: "menu - Menu - Bảng kê",
     example: '<menu>\n<li type="disc">List item 1</li>\n<li type="circle">List item 2</li>\n<li type="square">List item 3</li>\n</menu>',
     browser: '',
   },
-  { 
+  {
     id: "meta",
     name: "<meta>",
     meaning: "Meta - Thông tin về dữ liệu",
@@ -160,56 +164,56 @@ let elementArr = [
     browser: '',
     ahihi: "hidden",
   },
-  { 
+  {
     id: "ordered-list",
     name: "<ol>",
     meaning: "Ordered list - Danh sách liệt kê theo thứ tự",
     example: '<ol>\n<li>List item 1</li>\n<li>List item 2</li>\n<li>List item 3</li>\n<li>List item 4</li>\n</ol>',
     browser: '',
   },
-  { 
+  {
     id: "option",
     name: "<option>",
     meaning: "Listbox option - Hộp tuỳ chọn",
     example: '<form method=post action="/cgi- bin/example.cgi">\n<center>\nSelect an option:\n<select>\n<option>option 1</option>\n<option selected>option 2</option>\n<option>option 3</option>\n<option>option 4</option>\n<option>option 5</option>\n<option>option 6</option>\n</select><br>\n</center>\n</form>',
     browser: '',
   },
-  { 
+  {
     id: "paragraph",
     name: "<p>",
     meaning: "Paragraph - Đoạn văn",
     example: 'This is an example displaying the use of the paragraph tag. <p> This will create a line break and a space between lines.',
     browser: '',
   },
-  { 
+  {
     id: "strong",
     name: "<strong>",
     meaning: "Strong emphasis - In đậm và nhấn mạnh",
     example: '<strong>Example</strong>',
     browser: '',
   },
-  { 
+  {
     id: "table",
     name: "<table>",
     meaning: "Table - Bảng",
     example: '<table border="4" cellpadding="2" cellspacing="2" width="100%">\n<tr>\n<td>Column 1</td>\n<td>Column 2</td>\n</tr>\n</table>',
     browser: '',
   },
-  { 
+  {
     id: "table-data",
     name: "<td>",
     meaning: "Table data - Thông tin từng ô trong bảng",
     example: '<table border="2" cellpadding="2" cellspacing="2" width="100%">\n<tr>\n<td>Column 1</td>\n<td>Column 2</td>\n</tr>\n</table>',
     browser: '',
   },
-  { 
+  {
     id: "table-header",
     name: "<th>",
     meaning: "Table header - Đầu mục của bảng",
     example: '<div align="center">\n<table>\n<tr>\n<th>Column 1</th>\n<th>Column 2</th>\n</tr>\n<tr>\n<td>Row 2</td>\n<td>Row 2</td>\n</tr>\n<tr>\n<td>Row 3</td>\n<td>Row 3</td>',
     browser: '',
   },
-  { 
+  {
     id: "title",
     name: "<title>",
     meaning: "Document title - Tiêu đề",
@@ -217,21 +221,21 @@ let elementArr = [
     browser: '',
     ahihi: "hidden",
   },
-  { 
+  {
     id: "table-row",
     name: "<tr>",
     meaning: "Table row - Hàng của bảng",
     example: '<table border="2" cellpadding="2" cellspacing="2" width="100%">\n<tr>\n<td>Column 1</td>\n<td>Column 2</td>\n</tr>\n</table>',
     browser: '',
   },
-  { 
+  {
     id: "underline",
     name: "<u>",
     meaning: "Underline - gạch chân",
     example: '<u>Example</u>',
     browser: '',
   },
-  { 
+  {
     id: "unordered-list",
     name: "<ul>",
     meaning: "Unordered list - Danh sách không theo thứ tự",
@@ -241,4 +245,4 @@ let elementArr = [
 ]
 
 // xuất khẩu lao động object này
-export {elementArr};
+export { elementArr };

@@ -70,7 +70,8 @@ a {
     transition: ease-out;
     transition-duration: 0.3s;
 }
-.menu-item.active{
+
+.menu-item.active {
     background-color: #DB6400;
 }
 
@@ -94,7 +95,8 @@ a {
 .slogan>div>div>h1 {
     font-size: 65px;
 }
-.slogan > p{
+
+.slogan>p {
     margin-top: 30px;
     font-size: 21px;
     line-height: 150%;
@@ -108,7 +110,7 @@ a {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     text-align: center;
-    width: 100% ;
+    width: 100%;
 }
 
 .slg-img1 {
@@ -126,16 +128,18 @@ a {
 .slg-img4 {
     grid-row: 3/5;
 }
-.slogan-image > div > img{
+
+.slogan-image>div>img {
     height: 100%;
     border-radius: 12px;
     width: 150px;
 }
-.slogan > div{
+
+.slogan>div {
     margin: auto;
 }
 
-.btn-white{
+.btn-white {
     width: fit-content;
     padding: 10px;
     border: 1px solid black;
@@ -145,7 +149,8 @@ a {
     font-family: Montserrat Reg;
     font-size: 22px;
 }
-.btn-white > a{
+
+.btn-white>a {
     color: black;
 }
 
@@ -158,7 +163,7 @@ a {
 }
 
 /* BUTTON TO SCROLL TOP */
-.top-btn{
+.top-btn {
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -171,7 +176,8 @@ a {
     border-radius: 50%;
     color: black;
 }
-.top-btn > i:hover{
+
+.top-btn>i:hover {
     transform: scale(1.15);
     transform: translateY(-5px);
     transition: ease-out;
@@ -248,7 +254,8 @@ a {
     background-size: cover;
     /* height: 100vh; */
 }
-.element-number{
+
+.element-number {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 70%;
@@ -523,7 +530,7 @@ a {
 
 
 /* START LEARNING - BACKGROUND 6 */
-.start-learning{
+.start-learning {
     background-image: url(Asset/Background/bgr7.jpg);
     background-size: cover;
 }
@@ -561,12 +568,14 @@ a {
 .learning-section-name>a {
     color: black;
 }
-.scale{
+
+.scale {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.758);
     border-radius: 8px;
 }
-.scale :hover{
+
+.scale :hover {
     transform: translate(100px);
 }
 
@@ -582,11 +591,12 @@ a {
 }
 
 /* PARTNER -DIV 7*/
-.partner{
+.partner {
     background-image: url(Asset/Background/bgr6.jpg);
     background-size: cover;
 }
-.partner-list{
+
+.partner-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -594,12 +604,14 @@ a {
     grid-row-gap: 100px;
     padding: 50px;
 }
-.partner > div {
+
+.partner>div {
     font-size: 20px;
     font-weight: bold;
     line-height: 200%;
 }
-.partner-list > div > img{
+
+.partner-list>div>img {
     width: 100px;
 }
 
