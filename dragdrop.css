@@ -13,7 +13,7 @@ body {
 
 /* background toàn màn hình */
 .dragdrop-game {
-    background-image: url(Asset/Background/dragdrop\ bgr.jpg);
+    background-image: url(./Asset/Background/dragdrop\ bgr.jpg);
     background-size: cover;
     height: 100vh;
 }

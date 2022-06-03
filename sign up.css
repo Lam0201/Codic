@@ -3,7 +3,7 @@ body {
 }
 
 .content {
-    background-image: url(Asset/Background/sign\ up\ bgr.jpg);
+    background-image: url(./Asset/Background/sign\ up\ bgr.jpg);
     background-size: cover;
     /* height: 100%; */
     z-index: 0;

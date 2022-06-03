@@ -9,7 +9,7 @@ html {
 }
 
 @font-face {
-    src: url(Asset/Montserrat/Montserrat-Regular.ttf);
+    src: url(./Asset/Montserrat/Montserrat-Regular.ttf);
     font-family: Montserrat Reg;
 }
 
@@ -77,7 +77,7 @@ a {
 
 /* INTRODUCTION DIV 1 */
 .intro {
-    background-image: url(Asset/Background/slogan\ bgr.jpg);
+    background-image: url(./Asset/Background/slogan\ bgr.jpg);
     background-size: cover;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -189,7 +189,7 @@ a {
     padding-top: 50px;
     text-align: center;
     height: fit-content;
-    background-image: url(Asset/Background/bgr2.jpg);
+    background-image: url(./Asset/Background/bgr2.jpg);
     background-size: cover;
 }
 
@@ -250,7 +250,7 @@ a {
 /* REMEMBER ELEMENT - DIV 3 */
 .remember-element {
     text-align: center;
-    background-image: url(Asset/Background/bgr3.jpg);
+    background-image: url(./Asset/Background/bgr3.jpg);
     background-size: cover;
     /* height: 100vh; */
 }
@@ -353,7 +353,7 @@ a {
 /* EXERCISE - DIV 4 */
 .exercise {
     text-align: center;
-    background-image: url(Asset/Background/bgr4.jpg);
+    background-image: url(./Asset/Background/bgr4.jpg);
     background-size: cover;
 }
 
@@ -445,7 +445,7 @@ a {
 /* USER FEEEDBACK - DIV 5 */
 .user-feedback {
     text-align: center;
-    background-image: url(Asset/Background/bgr5.jpg);
+    background-image: url(./Asset/Background/bgr5.jpg);
     background-size: cover;
 }
 
@@ -531,7 +531,7 @@ a {
 
 /* START LEARNING - BACKGROUND 6 */
 .start-learning {
-    background-image: url(Asset/Background/bgr7.jpg);
+    background-image: url(./Asset/Background/bgr7.jpg);
     background-size: cover;
 }
 
@@ -554,7 +554,7 @@ a {
     justify-content: space-evenly;
     line-height: 400%;
     font-size: 35px;
-    background-image: url(Asset/Background/learn\ word.jpg);
+    background-image: url(./Asset/Background/learn\ word.jpg);
     background-size: cover;
     border-radius: 18px 18px 0 0;
     height: fit-content;
@@ -592,7 +592,7 @@ a {
 
 /* PARTNER -DIV 7*/
 .partner {
-    background-image: url(Asset/Background/bgr6.jpg);
+    background-image: url(./Asset/Background/bgr6.jpg);
     background-size: cover;
 }
 
@@ -617,7 +617,7 @@ a {
 
 /* FOOTER - DIV 8 */
 .footer {
-    background-image: url(Asset/Background/footer\ bgr.jpg);
+    background-image: url(./Asset/Background/footer\ bgr.jpg);
     background-size: cover;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
