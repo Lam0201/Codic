@@ -26,7 +26,6 @@ body {
 /* danh sách chứa các thẻ từ tiếng anh để kéo */
 .Lists {
     display: flex;
-    /* align-items: center; */
     flex-wrap: wrap;
     background-color: rgba(255, 255, 255, 0.733);
     border-radius: 12px;
@@ -111,7 +110,6 @@ body {
     border-color: rgba(0, 0, 0, 0.525);
     margin: 10px;
     font-size: 30px;
-    /* font-weight: bold; */
     background-color: #B7E5DD;
     color: black;
     transition-duration: 0.4s;

@@ -145,6 +145,9 @@ a {
     font-family: Montserrat Reg;
     font-size: 22px;
 }
+.btn-white > a{
+    color: black;
+}
 
 .btn-white:hover {
     background-color: #DB6400;
