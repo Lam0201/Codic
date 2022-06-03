@@ -10,7 +10,7 @@ login.addEventListener("submit", (e) => {
 
     for (let users of localUsers) {
         if (users.username === e.target.username.value && users.password === e.target.password.value) {
-            document.location.href = "/codic.html"
+            document.location.href = "/index.html"
         } else {
             document.getElementById("password-messenger").innerHTML = "tên đăng nhập hoặc mật khẩu không đúng"
         }

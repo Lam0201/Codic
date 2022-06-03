@@ -11,8 +11,8 @@ let elementArr = [
     id: "a-tag",
     name: "<a>",
     meaning: "Anchor - Mỏ neo - Dẫn đường link",
-    example: '<a href="/codic.html"> Visit Our Site</a>',
-    browser: '<a href="/codic.html"> Visit Our Site</a>',
+    example: '<a href="/index.html"> Visit Our Site</a>',
+    browser: '<a href="/index.html"> Visit Our Site</a>',
   },
   {
     id: "b-tag",
