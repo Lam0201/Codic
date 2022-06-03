@@ -39,6 +39,10 @@ function allTag () {
       let tagBrowserContent = document.createElement("p");
       tagBrowserContent.className = "browser";
       tagBrowserContent.innerHTML = elementArr[a].example;
+      // một vài thẻ tag sẽ ko hiển thị trên trình duyệt nên ta sẽ xét chúng qua object ahihi =)))))
+      if (elementArr[a].ahihi == "hidden") {
+      tagBrowserContent.innerHTML = "Nothing will be shown";
+      }  
     // gán các thẻ tùm lum ở trên vào html
     htmlElement.appendChild(elementContainer);
     elementContainer.appendChild(elementItem);
@@ -49,6 +53,8 @@ function allTag () {
     elementContent.appendChild(tagExampleContent);
     elementContent.appendChild(tagBrowser);
     elementContent.appendChild(tagBrowserContent);
+    
+    
   }
 }
 allTag();

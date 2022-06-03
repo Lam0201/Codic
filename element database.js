@@ -5,7 +5,8 @@ let elementArr = [
     name: "<!--(comment)-->",
     meaning: "Bình luận",
     example: "<!--This can be viewed in the HTML part of a document-->",
-    browser: '<!--This can be viewed in the HTML part of a document-->',
+    browser: '',
+    ahihi: "hidden",
   },
   {
     id: "a-tag",
@@ -142,6 +143,7 @@ let elementArr = [
     meaning: "Link - đường dẫn",
     example: '<head>\n<link rel="stylesheet" type="text/css"\nhref="style.css" />\n</head>',
     browser: '',
+    ahihi: "hidden",
   },
   { 
     id: "menu",
@@ -156,6 +158,7 @@ let elementArr = [
     meaning: "Meta - Thông tin về dữ liệu",
     example: '<meta name="Description" content="Description of your site">\n<meta name="keywords" content="keywords describing your site">',
     browser: '',
+    ahihi: "hidden",
   },
   { 
     id: "ordered-list",
@@ -212,6 +215,7 @@ let elementArr = [
     meaning: "Document title - Tiêu đề",
     example: '<title>Title of your HTML page</title>',
     browser: '',
+    ahihi: "hidden",
   },
   { 
     id: "table-row",
