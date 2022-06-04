@@ -12,10 +12,10 @@ login.addEventListener("submit", (e) => {
 
     for (let users of localUsers) {
         if (users.username === e.target.username.value && users.password === e.target.password.value) {
-            alert("chào mừng bạn đến với Codic")
+            alert("Chào mừng bạn đến với Codic")
             document.location.href = "./index.html"
         } else {
-            document.getElementById("password-messenger").innerHTML = "tên đăng nhập hoặc mật khẩu không đúng"
+            document.getElementById("password-messenger").innerHTML = "Tên đăng nhập hoặc mật khẩu không đúng"
         }
     }
 })

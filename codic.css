@@ -17,7 +17,8 @@ body {
     font-family: Montserrat Reg;
 }
 
-/* TASK BAR */
+@media only screen and (min-width: 1024px) {
+    /* TASK BAR */
 .navi-bar {
     display: flex;
     justify-content: space-between;
@@ -108,7 +109,7 @@ a {
     margin: 80px 0 150px 0;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px 10px;
     text-align: center;
     width: 100%;
 }
@@ -132,7 +133,7 @@ a {
 .slogan-image>div>img {
     height: 100%;
     border-radius: 12px;
-    width: 150px;
+    max-width: 150px;
 }
 
 .slogan>div {
@@ -630,6 +631,7 @@ a {
 
 .channel>a {
     padding: 30px;
+    line-height: 200%;
 }
 
 .footer-infor {
@@ -686,4 +688,10 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #DB6400;
+}
+}
+
+/* For mini laptop */
+@media only screen and (max-width: 1024px) {
+    .slogan-image>div>img{width: 100px}
 }
