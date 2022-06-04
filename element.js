@@ -1,5 +1,5 @@
 // nhập khẩu nhân công elementArr
-import { elementArr, cssArr } from "./element database.js";
+import { elementArr, cssArr, jsArr } from "./element database.js";
 // gọi class cụ tổ all-element:
 let allElement = document.querySelectorAll(".all-element");
 
@@ -106,6 +106,56 @@ function allCSSTag () {
   }
 }
 allCSSTag();
+
+function allJSTag () {
+  for (let a = 0; a < jsArr.length; a++) {
+    // tạo thẻ chứa nút và nội dung
+    let elementContainer = document.createElement("div");
+    elementContainer.className = "element-item-container";
+    // tạo các nút bấm có tên thẻ
+    let elementItem = document.createElement("button");
+    elementItem.className = "element-item";
+    elementItem.value = jsArr[a].name;
+    elementItem.innerText = jsArr[a].name;
+    // tạo thẻ chứa các nội dung
+    let elementContent = document.createElement("div");
+    elementContent.className = "element-item-content";
+    elementContent.setAttribute("id", jsArr[a].name);
+    // tạo các nội dung
+      // thẻ meaning
+      let tagMeaning = document.createElement("h4");
+      tagMeaning.className = "tag-meaning";
+      tagMeaning.innerText = "Ý nghĩa";
+      let tagMeaningContent = document.createElement("p");
+      tagMeaningContent.className = "meaning";
+      tagMeaningContent.innerText = jsArr[a].meaning;
+      // thẻ definition
+      let tagDefinition = document.createElement("h4");
+      tagDefinition.className = "tag-definition";
+      tagDefinition.innerText = "Định nghĩa";
+      let tagDefinitionContent = document.createElement("p");
+      tagDefinitionContent.className = "definition";
+      tagDefinitionContent.innerHTML = jsArr[a].definition;
+      // thẻ example
+      let tagExample = document.createElement("h4");
+      tagExample.className = "tag-example";
+      tagExample.innerText = "Ví dụ";
+      let tagExampleContent = document.createElement("p");
+      tagExampleContent.className = "example";
+      tagExampleContent.innerText = jsArr[a].example;
+    // gán các thẻ tùm lum ở trên vào html
+    allElement[2].appendChild(elementContainer);
+    elementContainer.appendChild(elementItem);
+    elementContainer.appendChild(elementContent);
+    elementContent.appendChild(tagMeaning);
+    elementContent.appendChild(tagMeaningContent);
+    elementContent.appendChild(tagDefinition);
+    elementContent.appendChild(tagDefinitionContent);
+    elementContent.appendChild(tagExample);
+    elementContent.appendChild(tagExampleContent);    
+  }
+}
+allJSTag();
 
 //Thêm hoặc bớt class="show"
 function myFunction(id) {

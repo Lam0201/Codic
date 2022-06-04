@@ -1,5 +1,5 @@
 // nhập khẩu nhân công elementArr
-import { elementArr, cssArr } from "./element database.js";
+import { elementArr, cssArr, jsArr } from "./element database.js";
 
 
 // gọi danh sách chứa các thẻ từ tiếng anh
