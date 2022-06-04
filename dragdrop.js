@@ -1,3 +1,7 @@
+// nhập khẩu nhân công elementArr
+import { elementArr, cssArr } from "./element database.js";
+
+
 // gọi danh sách chứa các thẻ từ tiếng anh
 let lists = document.querySelector(".Lists");
 // lưu các thẻ p có tên class là css vào array listArr
@@ -9,9 +13,17 @@ let boardArr = new Array();
 // lưu các từ tiếng anh (tương đương id ô trống dịch nghĩa) sẽ xuất hiện vào array appeared
 let appeared = new Array();
 // lưu nội dung từ tiếng anh của các thẻ vào array
-let listArrText = ["color", "background-color", "margin", "border", "padding", "font-family", "font-size", "font-weight"];
+let listArrText = new Array();
+for (let count = 0; count < elementArr.length; count++) {
+    listArrText[count] = elementArr[count].name;
+}
+// let listArrText = ["color", "background-color", "margin", "border", "padding", "font-family", "font-size", "font-weight"];
 // lưu nội dung dịch nghĩa của các thẻ vào array
-let boardArrText = [": màu chữ", ": màu nền", ": khoảng trống ngoài viền", ": viền", ": đệm", ": phông chữ", ": cỡ chữ", ": độ dày chữ"];
+let boardArrText = new Array();
+for (let count = 0; count < elementArr.length; count++) {
+    boardArrText[count] = elementArr[count].meaning;
+}
+// let boardArrText = [": màu chữ", ": màu nền", ": khoảng trống ngoài viền", ": viền", ": đệm", ": phông chữ", ": cỡ chữ", ": độ dày chữ"];
 // lưu tên id của các ô trống vào array (giống listArrText)
 let blankIdText = listArrText;
 // đây là số từ sẽ xuất hiện:
@@ -20,7 +32,10 @@ let number = 4;
 let dragTime = 10;
 // đây là từ được kéo, hiện tại ta để mặc định là null
 let draggedItem = null;
+// gọi phần nhiệm vụ người dùng khi chơi trò chơi:
+let mission = document.querySelector(".center");
 
+// console.log(listArrText);
 function GamePlay() {
     shuffleWord();
     appearedWord();
@@ -165,15 +180,15 @@ function countDownClock() {
     function checkTime(now) {
         if (now < 0) {
             clock.innerHTML = "HẾT GIỜ !!!";
-            for (i = 0; i < lists.children.length; i++) {
+            for (let i = 0; i < lists.children.length; i++) {
                 lists.children[i].setAttribute("draggable", false);
             }
             clearInterval(countDown);
             if (lists.children.length == 0) {
-                alert("chúc mừng! Bạn cũng kinh đấy");
+                alert("chúc mừng! Bạn đã thắng màn chơi này rồi !");
                 next.style.display = "block";
             } else {
-                alert("Bạn còn non và xanh lắm!");
+                alert("Bạn thua mất rồi.. Hãy cố gắng hơn lần sau nhé ! ");
                 retry.style.display = "block";
             }
         }
@@ -192,8 +207,6 @@ function nextLevel() {
     if (number < listArrText.length) {
         number++;
         dragTime += 2;
-    } else {
-        alert("bạn đã chơi hết các cấp độ rồi ! bạn khủng khiếp đấy");
     }
 
     GamePlay();
@@ -205,8 +218,14 @@ function retryGame() {
     while (lists.hasChildNodes()) {
         lists.removeChild(lists.firstChild);
     }
-    number = 4;
-    dragTime = 10;
+    if (number > 4) {
+        number--;
+        dragTime -= 2;
+    } else {
+        number = 4;
+        dragTime = 10;
+    }
+    
     GamePlay();
 }
 

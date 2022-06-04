@@ -1,7 +1,7 @@
 // nhập khẩu nhân công elementArr
 import { elementArr, cssArr } from "./element database.js";
-// gọi class cụ tổ html-element:
-let htmlElement = document.querySelectorAll(".html-element");
+// gọi class cụ tổ all-element:
+let allElement = document.querySelectorAll(".all-element");
 
 function allHTMLTag () {
   for (let a = 0; a < elementArr.length; a++) {
@@ -44,7 +44,7 @@ function allHTMLTag () {
       tagBrowserContent.innerHTML = "Nothing will be shown";
     }
     // gán các thẻ tùm lum ở trên vào html
-    htmlElement[0].appendChild(elementContainer);
+    allElement[0].appendChild(elementContainer);
     elementContainer.appendChild(elementItem);
     elementContainer.appendChild(elementContent);
     elementContent.appendChild(tagMeaning);
@@ -65,12 +65,12 @@ function allCSSTag () {
     // tạo các nút bấm có tên thẻ
     let elementItem = document.createElement("button");
     elementItem.className = "element-item";
-    elementItem.value = cssArr[a].id;
-    elementItem.innerText = cssArr[a].id;
+    elementItem.value = cssArr[a].name;
+    elementItem.innerText = cssArr[a].name;
     // tạo thẻ chứa các nội dung
     let elementContent = document.createElement("div");
     elementContent.className = "element-item-content";
-    elementContent.setAttribute("id", cssArr[a].id);
+    elementContent.setAttribute("id", cssArr[a].name);
     // tạo các nội dung
       // thẻ meaning
       let tagMeaning = document.createElement("h4");
@@ -94,7 +94,7 @@ function allCSSTag () {
       tagExampleContent.className = "example";
       tagExampleContent.innerText = cssArr[a].example;
     // gán các thẻ tùm lum ở trên vào html
-    htmlElement[1].appendChild(elementContainer);
+    allElement[1].appendChild(elementContainer);
     elementContainer.appendChild(elementItem);
     elementContainer.appendChild(elementContent);
     elementContent.appendChild(tagMeaning);

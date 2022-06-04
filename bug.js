@@ -9,12 +9,12 @@ let userCode = document.getElementById("userCode");
 
 // tạo các cục bug khác màu cho những bàn tiếp theo
 let bug2 = document.createElement("i");
-bug2.style.color = "rgb(238, 238, 98)";
+bug2.style.color = "yellow";
 bug2.style.fontSize = "calc(25px + 3vw)";
 bug2.className = "fa-solid fa-bug";
 // bug.appendChild(bug2);
 let bug3 = document.createElement("i");
-bug3.style.color = "lightgreen";
+bug3.style.color = "green";
 bug3.style.fontSize = "calc(25px + 3vw)";
 bug3.className = "fa-solid fa-bug";
 // bug.appendChild(bug3);
@@ -26,14 +26,14 @@ bug4.className = "fa-solid fa-bug";
 
 // tạo các túi fire khác màu cho những bàn tiếp theo
 let fire2 = document.createElement("i");
-fire2.style.color = "yellow";
+fire2.style.color = "rgb(238, 238, 98)";
 fire2.style.fontSize = "calc(55px + 3vw)";
-fire2.className = "fa-solid fa-fire";
+fire2.className = "fa-solid fa-fire-flame-curved";
 // fire.appendChild(fire2);
 let fire3 = document.createElement("i");
-fire3.style.color = "green";
+fire3.style.color = "lightgreen";
 fire3.style.fontSize = "calc(55px + 3vw)";
-fire3.className = "fa-solid fa-fire";
+fire3.className = "fa-solid fa-fire-flame-curved";
 // fire.appendChild(fire3);
 
 

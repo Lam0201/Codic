@@ -2,7 +2,7 @@
     background-image: url(Asset/Background/html.jpg);
     background-size: cover;
 } */
-.html-element {
+.all-element {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
