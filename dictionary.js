@@ -16,7 +16,7 @@ window.onload = function () {
 
     setInterval(changeImage, 60000);
     function changeImage() {
-        var i = Math.floor((Math.random() * 43));
+        var i = Math.floor((Math.random() * 12));
         document.body.style.backgroundImage = "url('" + backgroundImg[i] + "')";
     }
 }
