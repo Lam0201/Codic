@@ -17,6 +17,11 @@ body {
     background-size: cover;
     height: 100vh;
 }
+.game-infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* CSS khu vực chơi */
 .game-area {
@@ -71,6 +76,9 @@ body {
 #time {
     align-items: center;
     font-size: 30px;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 5px;
 }
 
 /* ô trống để thả từ tiếng anh được kéo vào */

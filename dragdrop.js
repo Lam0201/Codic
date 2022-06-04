@@ -35,6 +35,7 @@ let draggedItem = null;
 // gọi phần nhiệm vụ người dùng khi chơi trò chơi:
 let mission = document.querySelector(".center");
 
+
 // console.log(listArrText);
 function GamePlay() {
     shuffleWord();
@@ -42,6 +43,7 @@ function GamePlay() {
     shuffleMeaning();
     appearedMeaning();
     dragNdrop();
+    mission.innerText = "Bạn có " + dragTime + " giây để điền các từ vào đúng ô trống";
     countDownClock();
 }
 function shuffleWord() {
