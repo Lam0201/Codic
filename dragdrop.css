@@ -11,6 +11,57 @@ body {
     font-size: 30px;
 }
 
+/* Background selection */
+.selection{
+    display: flex;
+}
+
+.selection > img{
+    width: 50vw;
+    /* height: 80vh; */
+}
+.content-selection{
+    width: 50vw;
+    background-color: #94B49F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+    /* line-height: 250%; */
+}
+
+.content-selection > h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.content-selection > button{
+    width: 35%;
+    margin: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0d8b098;
+    cursor: pointer;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+            0 2px 2px rgba(0, 0, 0, 0.12),
+            0 4px 4px rgba(0, 0, 0, 0.12),
+            0 8px 8px rgba(0, 0, 0, 0.12),
+            0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.content-selection > button > a :hover{
+    transform: translateY(8px);
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.content-selection > button > a{
+    color: black;
+    font-size: 25px;
+}
+
 /* background toàn màn hình */
 .dragdrop-game {
     background-image: url(./Asset/Background/dragdrop\ bgr.jpg);
@@ -21,6 +72,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.margin10{
+    margin: 20px 0 10px 0;
 }
 
 /* CSS khu vực chơi */
