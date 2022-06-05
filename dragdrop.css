@@ -66,7 +66,12 @@ body {
 .dragdrop-game {
     background-image: url(./Asset/Background/dragdrop\ bgr.jpg);
     background-size: cover;
+<<<<<<< HEAD
     /* height: 100vh; */
+=======
+    height: 100vh;
+    display: none;
+>>>>>>> 3f0782acffd726d3c082ab9570ff3be27c70a704
 }
 .game-infor{
     display: flex;
