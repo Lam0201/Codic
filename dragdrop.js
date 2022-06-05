@@ -1,7 +1,10 @@
 // nhập khẩu nhân công elementArr
 import { elementArr, cssArr, jsArr } from "./element database.js";
 
-
+// gọi thẻ cụ tổ trò chơi
+let game = document.querySelector(".dragdrop-game");
+// gọi thẻ cụ tổ lựa chọn
+let selection = document.querySelector(".selection");
 // gọi danh sách chứa các thẻ từ tiếng anh
 let lists = document.querySelector(".Lists");
 // lưu các thẻ p có tên class là css vào array listArr
@@ -12,18 +15,14 @@ let board = document.querySelector(".board1");
 let boardArr = new Array();
 // lưu các từ tiếng anh (tương đương id ô trống dịch nghĩa) sẽ xuất hiện vào array appeared
 let appeared = new Array();
+// gọi các nút bấm chọn chế độ chơi html/css/js:
+let htmlButton = document.getElementById("html");
+let cssButton = document.getElementById("css");
+let jsButton = document.getElementById("js");
 // lưu nội dung từ tiếng anh của các thẻ vào array
 let listArrText = new Array();
-for (let count = 0; count < elementArr.length; count++) {
-    listArrText[count] = elementArr[count].name;
-}
-// let listArrText = ["color", "background-color", "margin", "border", "padding", "font-family", "font-size", "font-weight"];
 // lưu nội dung dịch nghĩa của các thẻ vào array
 let boardArrText = new Array();
-for (let count = 0; count < elementArr.length; count++) {
-    boardArrText[count] = elementArr[count].meaning;
-}
-// let boardArrText = [": màu chữ", ": màu nền", ": khoảng trống ngoài viền", ": viền", ": đệm", ": phông chữ", ": cỡ chữ", ": độ dày chữ"];
 // lưu tên id của các ô trống vào array (giống listArrText)
 let blankIdText = listArrText;
 // đây là số từ sẽ xuất hiện:
@@ -34,9 +33,45 @@ let dragTime = 10;
 let draggedItem = null;
 // gọi phần nhiệm vụ người dùng khi chơi trò chơi:
 let mission = document.querySelector(".center");
+// gọi thời gian đếm ngược
+let countDown;
 
+// chọn chế độ chơi game
+htmlButton.addEventListener("click", function () {
+    for (let count = 0; count < elementArr.length; count++) {
+        listArrText[count] = elementArr[count].name;
+    }
+    for (let count = 0; count < elementArr.length; count++) {
+        boardArrText[count] = elementArr[count].meaning;
+    }
+    selection.style.display = "none";
+    game.style.display = "block";
+    GamePlay();
+})
+cssButton.addEventListener("click", function () {
+    for (let count = 0; count < cssArr.length; count++) {
+        listArrText[count] = cssArr[count].name;
+    }
+    for (let count = 0; count < cssArr.length; count++) {
+        boardArrText[count] = cssArr[count].meaning;
+    }
+    selection.style.display = "none";
+    game.style.display = "block";
+    GamePlay();
+})
+jsButton.addEventListener("click", function () {
+    for (let count = 0; count < jsArr.length; count++) {
+        listArrText[count] = jsArr[count].name;
+    }
+    for (let count = 0; count < jsArr.length; count++) {
+        boardArrText[count] = jsArr[count].meaning;
+    }
+    selection.style.display = "none";
+    game.style.display = "block";
+    GamePlay();
+})
 
-// console.log(listArrText);
+// chơi !
 function GamePlay() {
     shuffleWord();
     appearedWord();
@@ -111,7 +146,7 @@ function appearedMeaning() {
 function dragNdrop() {
     for (let i = 0; i < number; i++) {
         let item = lists.children[i];
-        let blank = board.children[i].children[0];
+        let blank = board.querySelectorAll(".blank")[i];
 
         // event Drag Start: bắt đầu kéo
         item.addEventListener("dragstart", function (event) {
@@ -173,7 +208,7 @@ function countDownClock() {
     // đặt thời gian làm bài 
     let now = new Date().setTime(dragTime);
     // đếm ngược thời gian về 0
-    let countDown = setInterval(function () {
+    countDown = setInterval(function () {
         clock.innerHTML = now;
         now -= 1;
         now = checkTime(now);
@@ -227,12 +262,10 @@ function retryGame() {
         number = 4;
         dragTime = 10;
     }
-    
+
     GamePlay();
 }
 
-
-GamePlay();
 
 
 

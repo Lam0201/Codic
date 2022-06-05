@@ -67,6 +67,7 @@ body {
     background-image: url(./Asset/Background/dragdrop\ bgr.jpg);
     background-size: cover;
     height: 100vh;
+    display: none;
 }
 .game-infor{
     display: flex;
