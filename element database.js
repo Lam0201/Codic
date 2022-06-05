@@ -456,6 +456,176 @@ let cssArr = [
 
 export {cssArr};
 
+// mảng dữ liệu thẻ js
+let jsArr = [
+  {
+    name: "NaN",
+    meaning: "không phải số",
+    definition: "Not a Number",
+    example: "if (isNaN(x)) {\nreturn NaN;\n}"
+  },
+  {
+    name: "undefined",
+    meaning: "không xác định",
+    definition: "undefined is a property of the global object. A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned",
+    example: "if (isNaN(x)) {\nreturn NaN;\n}"
+  },
+  {
+    name: "isNaN()",
+    meaning: "không phải số (hàm)",
+    definition: "isNaN() determines whether a value is NaN or not",
+    example: "function milliseconds(x) {\nif (isNaN(x)) {\nreturn 'Not a Number!';\n}\nreturn x * 1000;\n}",
+  },
+  {
+    name: "parseInt()",
+    meaning: "phân giải ra số nguyên",
+    definition: "parseInt() (parse integer) function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems)",
+    example: "function roughScale(x, base) {\nconst parsed = parseInt(x, base);\nif (isNaN(parsed)) { return 0; }\nreturn parsed * 100;\n}"
+  },
+  {
+    name: "Function",
+    meaning: "Hàm",
+    definition: "",
+    example: "function createFunction1() {}"
+  },
+  {
+    name: "ReferenceError",
+    meaning: "lỗi liên hệ một biến",
+    definition: "ReferenceError object represents an error when a variable that doesn't exist (or hasn't yet been initialized) in the current scope is referenced",
+    example: "throw new ReferenceError('Hello', 'someFile.js', 10)",
+  },
+  {
+    name: "SyntaxError",
+    meaning: "lỗi ký tự",
+    definition: "SyntaxError object represents an error when trying to interpret syntactically invalid code",
+    example: "throw new SyntaxError('Hello', 'someFile.js', 10);",
+  },
+  {
+    name: "Number",
+    meaning: "số",
+    definition: "Number(value) converts a string or other value to the Number type. If the value can't be converted, it returns NaN",
+    example: "Number('unicorn')  // NaN",
+  },
+  {
+    name: "Math",
+    meaning: "toán",
+    definition: "Math is a built-in object that has properties and methods for mathematical constants and functions",
+    example: "function degToRad(degrees) {\nreturn degrees * (Math.PI / 180);\n};",
+  },
+  {
+    name: "Date",
+    meaning: "ngày tháng",
+    definition: "Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.",
+    example: "let birthday = new Date('December 17, 1995 03:24:00')",
+  },
+  {
+    name: "String",
+    meaning: "chuỗi",
+    definition: "The String object is used to represent and manipulate a sequence of characters",
+    example: "const string4 = new String('A String object')",
+  },
+  {
+    name: "Array",
+    meaning: "mảng",
+    definition: "The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations",
+    example: "const fruits = new Array('Apple', 'Banana');",
+  },
+  {
+    name: "JSON",
+    meaning: "",
+    definition: "The JSON object contains methods for parsing JavaScript Object Notation (JSON) and converting values to JSON",
+    example: "",
+  },
+  {
+    name: "break",
+    meaning: "cắt, ngắt đoạn",
+    definition: "The break statement terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement",
+    example: "let i = 0;\nwhile (i < 6) {\nif (i === 3) {\nbreak;\n}\ni = i + 1;\n}",
+  },
+  {
+    name: "continue",
+    meaning: "tiếp tục",
+    definition: "The break statement terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement",
+    example: "let text = '';\nfor (let i = 0; i < 10; i++) {\nif (i === 3) {\ncontinue;\n}\ntext = text + i;\n}",
+  },
+  {
+    name: "if...else",
+    meaning: "nếu... thì",
+    definition: "The if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed",
+    example: "function testNum(a) {\nlet result;\nif (a > 0) {\nresult = 'positive';\n} else {\nresult = 'NOT positive';\n}\nreturn result;\n}",
+  },
+  {
+    name: "switch",
+    meaning: "chuyển đổi",
+    definition: "The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case",
+    example: "switch (expr) {\ncase 'Oranges':\nconsole.log('Oranges are $0.59 a pound.');\nbreak;\ncase 'Apples':\nconsole.log('Apples are $0.32 a pound.');\nbreak;\ndefault:\nconsole.log('Sorry, we are out of ' + expr + '.');\n}",
+  },
+  {
+    name: "continue",
+    meaning: "tiếp tục",
+    definition: "The break statement terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement",
+    example: "let text = '';\nfor (let i = 0; i < 10; i++) {\nif (i === 3) {\ncontinue;\n}\ntext = text + i;\n}",
+  },
+  {
+    name: "let",
+    meaning: "",
+    definition: "The let statement declares a block-scoped local variable, optionally initializing it to a value",
+    example: "let text = '';\nfor (let i = 0; i < 10; i++) {\nif (i === 3) {\ncontinue;\n}\ntext = text + i;\n}",
+  },
+  {
+    name: "const",
+    meaning: "hằng số",
+    definition: "Constants are block-scoped, much like variables declared using the let keyword. The value of a constant can't be changed through reassignment (i.e. by using the assignment operator), and it can't be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed",
+    example: "const number = 42;",
+  },
+  {
+    name: "return",
+    meaning: "trả lại",
+    definition: "function getRectArea(width, height) {\nif (width > 0 && height > 0) {\nreturn width * height;\n}\nreturn 0;\n}",
+  },
+  {
+    name: "const",
+    meaning: "hằng số",
+    definition: "Constants are block-scoped, much like variables declared using the let keyword. The value of a constant can't be changed through reassignment (i.e. by using the assignment operator), and it can't be redeclared (i.e. through a variable declaration). However, if a constant is an object or array its properties or items can be updated or removed",
+    example: "const number = 42;",
+  },
+  {
+    name: "class",
+    meaning: "lớp",
+    definition: "The class declaration creates a new class with a given name using prototype-based inheritance",
+    example: "class Polygon {\nconstructor(height, width) {\nthis.area = height * width;\n}\n}",
+  },
+  {
+    name: "do...while",
+    meaning: "làm... khi",
+    definition: "The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once",
+    example: "do {\nlet i = i + 1;\nresult = result + i;\n} while (i < 5);",
+  },
+  {
+    name: "for",
+    meaning: "với mỗi",
+    definition: "The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop",
+    example: "let str = '';\nfor (let i = 0; i < 9; i++) {\nstr = str + i;\n}",
+  },
+  {
+    name: "while",
+    meaning: "trong khi",
+    definition: "The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement",
+    example: "let n = 0;\nwhile (n < 3) {\nn++;\n}",
+  },
+  {
+    name: "export",
+    meaning: "xuất ra",
+    definition: "The export statement is used when creating JavaScript modules to export live bindings to functions, objects, or primitive values from the module so they can be used by other programs with the import statement",
+    example: "export { name1, name2, …, nameN };",
+  },
+  {
+    name: "import",
+    meaning: "nhập vào",
+    definition: "The static import statement is used to import read-only live bindings which are exported by another module",
+    example: "import { export1 as alias1 } from 'ácc';",
+  },
+]
 
-
+export {jsArr};
 
