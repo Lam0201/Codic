@@ -17,7 +17,7 @@ body {
     font-family: Montserrat Reg;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
     /* TASK BAR */
 .navi-bar {
     display: flex;
@@ -691,7 +691,26 @@ input[type=submit]:hover {
 }
 }
 
-/* For mini laptop */
-@media only screen and (max-width: 1024px) {
-    .slogan-image>div>img{width: 100px}
+.slogan-image>div>img {
+    height: 100%;
+    border-radius: 12px;
+    max-width: 150px;
+}
+
+
+@media screen and (min-width: 768px){
+    .slogan-image>div>img {
+        height: 100%;
+        border-radius: 12px;
+        max-width: 150px;
+    }
+}
+
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 768px){
+    .slogan-image>div>img {
+        height: 100%;
+        border-radius: 12px;
+        max-width: 40px;
+    }
 }
