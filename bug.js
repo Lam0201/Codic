@@ -35,6 +35,11 @@ fire3.style.color = "lightgreen";
 fire3.style.fontSize = "calc(55px + 3vw)";
 fire3.className = "fa-solid fa-fire-flame-curved";
 // fire.appendChild(fire3);
+let fire4 = document.createElement("i");
+fire4.style.color = "#EC994B";
+fire4.style.fontSize = "calc(55px + 3vw)";
+fire4.className = "fa-solid fa-fire-flame-curved";
+// fire.appendChild(fire4);
 
 
 function stage1() {
@@ -131,9 +136,10 @@ function stage3() {
 }
 
 function stage4() {
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 3 cột"
     fire.style.display = "grid";
     fire.style.gridTemplateColumns = "1fr 1fr 1fr";
-    fire.style.gridTemplateRows = "1fr";
+    // fire.style.gridTemplateRows = "1fr";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
     const winInterval = setInterval(function () {
@@ -158,9 +164,10 @@ function stage4() {
     });
 }
 function stage5() {
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 cột 2 hàng"
     fire.style.display = "grid";
-    fire.style.gridTemplateColumns = "1fr 1fr 1fr";
-    fire.style.gridTemplateRows = "1fr 1fr 1fr";
+    fire.style.gridTemplateColumns = "1fr 1fr";
+    fire.style.gridTemplateRows = "1fr 1fr";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
     const winInterval = setInterval(function () {
@@ -182,6 +189,91 @@ function stage5() {
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage6();
+    });
+}
+function stage6() {
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 3 hàng"
+    fire.style.display = "grid";
+    // fire.style.gridTemplateColumns = "1fr";
+    fire.style.gridTemplateRows = "1fr 1fr 1fr";
+    let cssfire = fire.style.cssText;
+    console.log(fire.style.cssText);
+    const winInterval = setInterval(function () {
+        bug.style = userCode.value;
+        // biến cssbug sẽ luôn lặp lại mỗi 1s để so sánh với biến cssfire (được kết quả từ đầu)
+        let cssbug = bug.style.cssText;
+        // nếu độ dài lượng css của bug và fire bằng nhau thì thắng
+        if (cssbug.length == cssfire.length) {
+            next.style.display = "block";
+        } else {
+            next.style.display = "none";
+        }
+    }, 1000)
+    // cài đặt event chuyển stage cho button
+    next.addEventListener("click", function () {
+        console.log("abc");
+        userCode.value = "";
+        fire.style.cssText = "";
+        // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
+        clearInterval(winInterval);
+        stage7();
+    });
+}
+function stage7() {
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 hàng 2 cột"
+    bug.appendChild(bug4);
+    fire.appendChild(fire4);
+    fire.style.display = "grid";
+    fire.style.gridTemplateColumns = "1fr 1fr";
+    fire.style.gridTemplateRows = "1fr 1fr";
+    let cssfire = fire.style.cssText;
+    console.log(fire.style.cssText);
+    const winInterval = setInterval(function () {
+        bug.style = userCode.value;
+        // biến cssbug sẽ luôn lặp lại mỗi 1s để so sánh với biến cssfire (được kết quả từ đầu)
+        let cssbug = bug.style.cssText;
+        // nếu độ dài lượng css của bug và fire bằng nhau thì thắng
+        if (cssbug.length == cssfire.length) {
+            next.style.display = "block";
+        } else {
+            next.style.display = "none";
+        }
+    }, 1000)
+    // cài đặt event chuyển stage cho button
+    next.addEventListener("click", function () {
+        console.log("abc");
+        userCode.value = "";
+        fire.style.cssText = "";
+        // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
+        clearInterval(winInterval);
+        stage8();
+    });
+}
+function stage8() {
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 4 hàng"
+    fire.style.display = "grid";
+    fire.style.gridTemplateRows = "1fr 1fr 1fr 1fr";
+    let cssfire = fire.style.cssText;
+    console.log(fire.style.cssText);
+    const winInterval = setInterval(function () {
+        bug.style = userCode.value;
+        // biến cssbug sẽ luôn lặp lại mỗi 1s để so sánh với biến cssfire (được kết quả từ đầu)
+        let cssbug = bug.style.cssText;
+        // nếu độ dài lượng css của bug và fire bằng nhau thì thắng
+        if (cssbug.length == cssfire.length) {
+            next.style.display = "block";
+        } else {
+            next.style.display = "none";
+        }
+    }, 1000)
+    // cài đặt event chuyển stage cho button
+    next.addEventListener("click", function () {
+        console.log("abc");
+        userCode.value = "";
+        fire.style.cssText = "";
+        // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
+        clearInterval(winInterval);
+        stage9();
     });
 }
 

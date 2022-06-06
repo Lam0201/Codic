@@ -17,7 +17,7 @@ body {
     font-family: Montserrat Reg;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) { */
     /* TASK BAR */
 .navi-bar {
     display: flex;
@@ -689,13 +689,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #DB6400;
 }
-}
-
-.slogan-image>div>img {
-    height: 100%;
-    border-radius: 12px;
-    max-width: 150px;
-}
+/* } */
 
 
 @media screen and (min-width: 768px){
