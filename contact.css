@@ -2,7 +2,9 @@
     background-image: url(./Asset/Background/contact\ bgr.jpg);
     background-size: cover;
 }
-
+@media screen {
+    
+}
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
