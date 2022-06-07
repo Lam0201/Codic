@@ -25,12 +25,12 @@ body {
 
 #gameScreen {
     position: relative;
-    width: 40vw;
-    height: 40vw;
+    width: 45vw;
+    height: 45vw;
     min-width: 300px;
     min-height: 300px;
-    max-width: 70vh;
-    max-height: 70vh;
+    /* max-width: 70vh;
+    max-height: 70vh; */
     display: flex;
     flex-direction: column;
 }
@@ -38,12 +38,12 @@ body {
 #gameArea {
     position: absolute;
     z-index: 1;
-    width: 40vw;
-    height: 40vw;
+    width: 45vw;
+    height: 45vw;
     min-width: 300px;
     min-height: 300px;
-    max-width: 70vh;
-    max-height: 70vh;
+    /* max-width: 70vh;
+    max-height: 70vh; */
     flex-direction: column;
     border-radius: 8px;
 }
@@ -51,13 +51,12 @@ body {
 #gameArea2 {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.616);
-    width: 40vw;
-    width: 40vw;
-    height: 40vw;
+    width: 45vw;
+    height: 45vw;
     min-width: 300px;
     min-height: 300px;
-    max-width: 70vh;
-    max-height: 70vh;
+    /* max-width: 70vh;
+    max-height: 70vh; */
     border-radius: 8px;
 }
 
