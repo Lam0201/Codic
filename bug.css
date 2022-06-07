@@ -94,13 +94,13 @@ body {
     margin: 10px;
     height: calc(40vw - 15px);
     min-height: calc(300px - 15px);
-    max-height: calc(80vh - 15px);
+    max-height: calc(70vh - 15px);
 }
 
 #fire {
     height: calc(40vw);
     min-height: calc(300px);
-    max-height: calc(80vh);
+    max-height: calc(70vh);
 }
 
 .text22 {

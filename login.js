@@ -1,3 +1,5 @@
+let button1 = document.getElementById("button1");
+
 let login = document.getElementById("login")
 if (!localStorage.users) {
     localStorage.users = JSON.stringify([]);
