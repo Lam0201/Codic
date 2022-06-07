@@ -139,7 +139,6 @@ function stage4() {
     task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 3 cột"
     fire.style.display = "grid";
     fire.style.gridTemplateColumns = "1fr 1fr 1fr";
-    // fire.style.gridTemplateRows = "1fr";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
     const winInterval = setInterval(function () {
@@ -164,10 +163,9 @@ function stage4() {
     });
 }
 function stage5() {
-    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 cột 2 hàng"
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 cột"
     fire.style.display = "grid";
     fire.style.gridTemplateColumns = "1fr 1fr";
-    fire.style.gridTemplateRows = "1fr 1fr";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
     const winInterval = setInterval(function () {
@@ -194,7 +192,6 @@ function stage5() {
 function stage6() {
     task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 3 hàng"
     fire.style.display = "grid";
-    // fire.style.gridTemplateColumns = "1fr";
     fire.style.gridTemplateRows = "1fr 1fr 1fr";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
@@ -220,12 +217,11 @@ function stage6() {
     });
 }
 function stage7() {
-    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 hàng 2 cột"
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 cột"
     bug.appendChild(bug4);
     fire.appendChild(fire4);
     fire.style.display = "grid";
     fire.style.gridTemplateColumns = "1fr 1fr";
-    fire.style.gridTemplateRows = "1fr 1fr";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
     const winInterval = setInterval(function () {
@@ -250,9 +246,9 @@ function stage7() {
     });
 }
 function stage8() {
-    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 4 hàng"
+    task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 3 cột"
     fire.style.display = "grid";
-    fire.style.gridTemplateRows = "1fr 1fr 1fr 1fr";
+    fire.style.gridTemplateColumns = "1fr 1fr 1fr";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
     const winInterval = setInterval(function () {
