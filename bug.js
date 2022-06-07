@@ -261,7 +261,7 @@ function stage8() {
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
-        stage9();
+        return;
     };
 }
 
