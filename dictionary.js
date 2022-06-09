@@ -83,33 +83,39 @@ function search(word) {
 }
 
 function fetchApi(word) {
-    // Xóa class active của wrapper
+    // Xóa class active của wrapper (bỏ ẩn đi)
     wrapper.classList.remove("active");
     infoText.style.color = "#000";
     infoText.innerHTML = `Searching the meaning of <span>"${word}"</span>`;
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}  `;
 
-    // 
+
     fetch(url).then(response => response.json()).then(result => data(result, word)).catch(() => {
         infoText.innerHTML = `Can't find the meaning of <span>"${word}"</span>. Please, try to search for another word.`;
     });
 }
 
 searchInput.addEventListener("keyup", e => {
+    // Remove dấu cách nếu có
     let word = e.target.value.replace(/\s+/g, ' ');
+    // Fetch word về
     if (e.key == "Enter" && word) {
         fetchApi(word);
     }
 });
 
+// Nút loa
 volume.addEventListener("click", () => {
+    // Click loa đổi màu và chạy file audio
     volume.style.color = "#4D59FB";
     audio.play();
+    // Sau 800ms thì về màu cũ
     setTimeout(() => {
         volume.style.color = "#999";
     }, 800);
 });
 
+// Reset lại như ban đầu
 removeIcon.addEventListener("click", () => {
     searchInput.value = "";
     searchInput.focus();

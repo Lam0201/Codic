@@ -64,14 +64,13 @@ function stage1() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage2();
-    });
+    };
 }
 
 function stage2() {
@@ -95,14 +94,13 @@ function stage2() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage3();
-    });
+    };
 }
 
 function stage3() {
@@ -125,14 +123,13 @@ function stage3() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage4();
-    });
+    };
 }
 
 function stage4() {
@@ -153,14 +150,13 @@ function stage4() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {      
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage5();
-    });
+    };
 }
 function stage5() {
     task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 cột"
@@ -180,14 +176,13 @@ function stage5() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage6();
-    });
+    };
 }
 function stage6() {
     task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 3 hàng"
@@ -207,14 +202,13 @@ function stage6() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage7();
-    });
+    };
 }
 function stage7() {
     task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 2 cột"
@@ -236,19 +230,18 @@ function stage7() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
         stage8();
-    });
+    };
 }
 function stage8() {
     task.innerHTML = "Nhiệm vụ: sử dụng grid để đưa con bọ vào ngọn lửa đúng màu của chúng <br/> Gợi ý: Sử dụng đơn vị fr, chia bảng thành 3 cột"
     fire.style.display = "grid";
-    fire.style.gridTemplateColumns = "1fr 1fr 1fr";
+    fire.style.gridTemplateRows = "1fr 1fr 1fr ";
     let cssfire = fire.style.cssText;
     console.log(fire.style.cssText);
     const winInterval = setInterval(function () {
@@ -263,14 +256,13 @@ function stage8() {
         }
     }, 1000)
     // cài đặt event chuyển stage cho button
-    next.addEventListener("click", function () {
-        console.log("abc");
+    next.onclick = function () {
         userCode.value = "";
         fire.style.cssText = "";
         // xóa interval cũ đi để tránh bị quá nhiều interval ở các stage sau
         clearInterval(winInterval);
-        stage9();
-    });
+        return;
+    };
 }
 
 // khởi chạy stage1, sau khi hoàn thành từng stage sẽ lần lượt ra stage tiếp 

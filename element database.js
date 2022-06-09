@@ -532,7 +532,7 @@ let jsArr = [
   },
   {
     name: "JSON",
-    meaning: "",
+    meaning: "Ghi chú đối tượng JavaScript",
     definition: "Đối tượng JSON chứa các phương thức để phân tích cú pháp JavaScript Object Notation (JSON) và chuyển đổi các giá trị thành JSON",
     example: "",
   },
